@@ -4,7 +4,7 @@
       :smallImage="smallImage"
       :mediumImage="mediumImage"
       :largeImage="largeImage"
-      alt="Follow Me"
+      alt="Un montagnard, sac à dos au sol, devant des montagnes. Texte : 'Suivez-moi' pointant vers le bas"
     />
     <h1>Le développeur montagnard</h1>
   </div>
