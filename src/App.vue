@@ -4,9 +4,13 @@ import HeaderComponent from './components/header/HeaderComponent.vue'
 
 <template>
   <div id="app">
-    <HeaderComponent />
+    <HeaderComponent class="header" />
     <RouterView />
   </div>
 </template>
 
-<style scoped></style>
+<style scoped>
+.header {
+  margin-bottom: 80px;
+}
+</style>

@@ -1,21 +1,63 @@
 <template>
   <div class="page-container">
-    <ResponsiveImage
-      :smallImage="smallImage"
-      :mediumImage="mediumImage"
-      :largeImage="largeImage"
-      alt="Un montagnard, sac à dos au sol, devant des montagnes. Texte : 'Suivez-moi' pointant vers le bas"
-    />
-    <h1>Le développeur montagnard</h1>
+    <div class="section-container section-one">
+      <div class="image-container">
+        <ResponsiveImage
+          class="follow-me-img"
+          :smallImage="smallFollowMe"
+          :mediumImage="mediumFollowMe"
+          :largeImage="largeFollowMe"
+          alt="Un montagnard, sac à dos au sol, devant des montagnes. Texte : 'Suivez-moi' pointant vers le bas"
+        />
+      </div>
+      <div class="text-container">
+        <h1>Le développeur montagnard</h1>
+        <h2 class="intro">
+          Passionné de <span>développement</span> et de <span>montagne</span>, je vous propose de
+          monter une expédition <span>Freelance</span> pour arriver à l'application de vos rêves
+        </h2>
+      </div>
+    </div>
+    <div class="section-container section-two">
+      <div class="text-container speciality-txt">
+        <h2>Spécialiste des API REST en Node.js et TypeScript</h2>
+        <p>
+          Vous avez <span>besoin de développer une API</span> pour votre application ? Je suis
+          l'homme qu'il vous faut !
+        </p>
+        <p>
+          Le développement <span>backend</span> est ma spécialité. Je peux vous concevoir une base
+          de données <span>normalisée et structurée</span> combinée à une API
+          <span>robuste et évolutive</span> pour interagir facilement avec le reste de votre
+          application
+        </p>
+        <p>
+          Mais je n'en reste pas moins capable de relever <span>d'autres défis</span> grâce à mes
+          <span>compétences full stack</span>
+        </p>
+      </div>
+      <div class="image-container">
+        <ResponsiveImage
+          class="map-drawing-img"
+          :smallImage="smallDrawing"
+          :mediumImage="mediumDrawing"
+          :largeImage="largeDrawing"
+          alt="Un homme qui dessine une carte"
+        />
+      </div>
+    </div>
   </div>
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue'
 import ResponsiveImage from '@/components/ResponsiveImage.vue'
-import smallImage from '@/assets/images/follow-me/follow_me_small.webp'
-import mediumImage from '@/assets/images/follow-me/follow_me_medium.webp'
-import largeImage from '@/assets/images/follow-me/follow_me_large.webp'
+import smallFollowMe from '@/assets/images/follow-me/follow_me_small.webp'
+import mediumFollowMe from '@/assets/images/follow-me/follow_me_medium.webp'
+import largeFollowMe from '@/assets/images/follow-me/follow_me_large.webp'
+import smallDrawing from '@/assets/images/map_drawing/map_drawing_small.webp'
+import mediumDrawing from '@/assets/images/map_drawing/map_drawing_medium.webp'
+import largeDrawing from '@/assets/images/map_drawing/map_drawing_large.webp'
 
 export default defineComponent({
   name: 'HomeView',
@@ -24,9 +66,12 @@ export default defineComponent({
   },
   setup() {
     return {
-      smallImage,
-      mediumImage,
-      largeImage
+      smallFollowMe,
+      mediumFollowMe,
+      largeFollowMe,
+      smallDrawing,
+      mediumDrawing,
+      largeDrawing
     }
   }
 })
@@ -35,5 +80,55 @@ export default defineComponent({
 <style scoped>
 .page-container {
   margin: 0px 110px;
+}
+
+.section-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.section-one {
+  height: 600px;
+}
+
+.section-two {
+  height: 700px;
+}
+
+.image-container,
+.text-container {
+  flex: 1;
+}
+
+.speciality-txt {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+
+.image-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+}
+
+.follow-me-img {
+  width: 100%;
+  min-width: 500px;
+}
+
+.map-drawing-img {
+  max-height: 700px;
+  max-width: 592.38px;
+  width: 100%;
+}
+
+.intro {
+  font-weight: 300;
+}
+
+span {
+  font-weight: 700;
 }
 </style>
