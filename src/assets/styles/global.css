@@ -10,6 +10,10 @@
   --normal-font-size: 22px;
   --h2-font-size: 36px;
   --h1-font-size: 58px;
+
+  --tablet-normal-font-size: 17px;
+  --tablet-h2-font-size: 28px;
+  --tablet-h1-font-size: 45px;
 }
 
 body {
@@ -32,4 +36,25 @@ h2 {
 p {
   font-size: var(--normal-font-size);
   font-weight: 300;
+  text-align: justify;
+}
+
+@media (max-width: 1220px) {
+  h1 {
+    font-size: var(--tablet-h1-font-size);
+  }
+
+  h2 {
+    font-size: var(--tablet-h2-font-size);
+  }
+
+  p {
+    font-size: var(--tablet-normal-font-size);
+  }
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: var(--tablet-h2-font-size);
+  }
 }

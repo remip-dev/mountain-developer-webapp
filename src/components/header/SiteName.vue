@@ -1,5 +1,5 @@
 <template>
-  <div class="site-name">RÉMI POLICET</div>
+  <div class="site-name">REMI POLICET</div>
 </template>
 
 <script lang="ts">
@@ -12,7 +12,7 @@ export default defineComponent({
 
 <style scoped>
 .site-name {
-  font-size: 36px;
+  font-size: var(--h2-font-size);
   font-weight: 700;
   color: var(--tertiary-color);
   letter-spacing: 10px;
