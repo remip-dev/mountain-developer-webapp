@@ -1,5 +1,5 @@
 <template>
-  <div class="site-name">REMI POLICET</div>
+  <div class="site-name">RÉMI POLICET</div>
 </template>
 
 <script lang="ts">
