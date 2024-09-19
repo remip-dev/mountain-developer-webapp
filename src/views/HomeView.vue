@@ -1,7 +1,7 @@
 <template>
   <div class="page-container">
     <div class="section-container section-one">
-      <div class="image-container">
+      <div class="fm-image-container">
         <ResponsiveImage
           class="follow-me-img"
           :smallImage="smallFollowMe"
@@ -14,7 +14,7 @@
         <h1>Le développeur montagnard</h1>
         <h2 class="intro">
           Passionné de <span>développement</span> et de <span>montagne</span>, je vous propose de
-          monter une expédition <span>Freelance</span> pour arriver à l'application de vos rêves
+          monter une expédition <span>Freelance</span> pour arriver à l'application de vos rêves !
         </h2>
       </div>
     </div>
@@ -29,14 +29,14 @@
           Le développement <span>backend</span> est ma spécialité. Je peux vous concevoir une base
           de données <span>normalisée et structurée</span> combinée à une API
           <span>robuste et évolutive</span> pour interagir facilement avec le reste de votre
-          application
+          application.
         </p>
         <p>
           Mais je n'en reste pas moins capable de relever <span>d'autres défis</span> grâce à mes
-          <span>compétences full stack</span>
+          <span>compétences full stack.</span>
         </p>
       </div>
-      <div class="image-container">
+      <div class="md-image-container">
         <ResponsiveImage
           class="map-drawing-img"
           :smallImage="smallDrawing"
@@ -95,7 +95,8 @@ export default defineComponent({
   height: 700px;
 }
 
-.image-container,
+.fm-image-container,
+.md-image-container,
 .text-container {
   flex: 1;
 }
@@ -106,29 +107,103 @@ export default defineComponent({
   justify-content: end;
 }
 
-.image-container {
+.fm-image-container,
+.md-image-container {
   display: flex;
   flex-direction: column;
-  justify-content: end;
   align-items: center;
+}
+
+.fm-image-container {
+  justify-content: end;
+}
+
+.md-image-container {
+  justify-content: center;
 }
 
 .follow-me-img {
   width: 100%;
-  min-width: 500px;
+  max-width: 700px;
 }
 
 .map-drawing-img {
-  max-height: 700px;
-  max-width: 592.38px;
+  max-height: 600px;
+  max-width: 507.75px;
   width: 100%;
 }
 
 .intro {
   font-weight: 300;
+  text-align: justify;
 }
 
 span {
   font-weight: 700;
+}
+
+@media (max-width: 1220px) {
+  .page-container {
+    margin: 0px 70px;
+  }
+
+  .section-one {
+    height: 450px;
+  }
+
+  .section-two {
+    height: 550px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .page-container {
+    margin: 0px 80px;
+  }
+
+  .section-one {
+    height: 650px;
+    flex-direction: column;
+  }
+
+  .section-two {
+    height: 750px;
+    flex-direction: column-reverse;
+  }
+
+  .follow-me-img {
+    width: 85%;
+    max-width: 700px;
+  }
+
+  .map-drawing-img {
+    max-height: 600px;
+    max-width: 507.75px;
+    width: 50%;
+  }
+}
+
+@media (max-width: 780px) {
+  .page-container {
+    margin: 0px 30px;
+  }
+}
+
+@media (max-width: 600px) {
+  .text-container h2 {
+    font-size: var(--tablet-normal-font-size);
+  }
+
+  .section-one {
+    height: 400px;
+  }
+
+  .section-two {
+    height: 600px;
+  }
+
+  .page-container {
+    margin: 0px 20px;
+  }
 }
 </style>
