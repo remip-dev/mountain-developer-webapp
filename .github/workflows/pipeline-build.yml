@@ -61,9 +61,3 @@ jobs:
         with:
           name: build-latest
           path: ./dist
-
-      - name: Download build artefact
-        uses: actions/download-artifact@v4
-        with:
-          name: build-latest
-          path: ./build
