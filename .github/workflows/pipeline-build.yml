@@ -1,8 +1,8 @@
 # The Build Pipeline is responsible for preparing a production-ready build of the application.
 # It validates the code by running tests and ensures the build process completes successfully.
-# This pipeline also stores the build artifact on a dedicated 'builds' branch,
-# which is later used by the deploy pipeline to ensure that only the most recent validated code
-# is deployed to the production environment.
+# This pipeline upload two artefacts: one with a version number to have an historic,
+# another one with tag latest will be used by deploy pipeline
+
 # The pipeline achieves the following steps:
 # 1. Checkout the code from the main branch.
 # 2. Install the Node.js environment to ensure a consistent environment.
@@ -12,9 +12,7 @@
 # 6. Run unit tests to validate the code.
 # 7. Generate a version number based on the current timestamp for tracking purposes.
 # 8. Upload the build artifact with the version number for historical reference.
-# 9. Upload the build artifact to the 'builds' branch as the latest build.
-#    This will overwrite any previous build in the 'builds' branch, ensuring
-#    that the branch always contains the most up-to-date build artifact.
+# 9. Upload the build artifact as latest
 
 name: Build Pipeline
 
@@ -59,25 +57,7 @@ jobs:
           path: ./dist
 
       - name: Upload latest build artifact to branch
-        run: |
-          git config user.name "github-actions"
-          git config user.email "github-actions@github.com"
-
-          # Create a temporary directory to store dist files
-          mkdir -p temp_dist
-          cp -r ./dist/* temp_dist/
-
-          git checkout -b builds || git checkout builds
-
-          # Clean the branch
-          rm -rf *
-
-          # Copy files from temp directory to the current branch
-          cp -r temp_dist/* .
-
-          # Clean up temp directory
-          rm -rf temp_dist
-
-          git add .
-          git commit -m "Update latest build"
-          git push origin builds --force
+        uses: actions/upload-artifact@v4
+        with:
+          name: build-latest
+          path: ./dist
