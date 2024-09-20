@@ -14,11 +14,18 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
+      - name: Get latest build run ID
+        id: get_run_id
+        run: |
+          RUN_ID=$(curl -s -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
+            "https://api.github.com/repos/${{ github.repository }}/actions/runs?branch=main&event=pull_request&status=completed" | \
+            jq -r '.workflow_runs[0].id')
+          echo "::set-output name=run_id::$RUN_ID"
+
       - name: Download build artefact
         uses: actions/download-artifact@v4
         with:
-          run-id: ${{ github.event.workflow_run.id }}
-          github-token: ${{ github.token }}
+          run-id: ${{ steps.get_run_id.outputs.run_id }}
           name: build-latest
           path: ./build
 
