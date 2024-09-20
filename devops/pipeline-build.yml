@@ -1,0 +1,50 @@
+# The Build Pipeline follows the next steps :
+# 1. Checkout the code
+# 2. Install the Node environment
+# 3. Install the dependencies
+# 4. Format the code
+# 5. Build the app
+# 6. Run the tests
+# 7. Generate a test report
+# 8. Upload the build artifact
+
+name: Build Pipeline
+
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+      uses: actions/checkout@v4
+
+      - name: Set up Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: 20
+
+      - name: Install dependencies
+      run: npm install
+
+      - name: Format code with Prettier
+      run: npm run format
+
+      - name: Build the app
+      run: npm run build
+
+      - name: Run tests
+      run: npm run test:unit
+
+      - name: Generate test report
+      run: npm run test:report
+
+      - name: Upload build artifact
+      uses: actions/upload-artifact@v4
+      with:
+        name: build-output
+        path: ./dist
