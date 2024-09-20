@@ -9,7 +9,6 @@
     "start": "http-server dist",
     "preview": "vite preview",
     "test:unit": "vitest",
-    "test:report": "vitest run --reporter junit --outputFile test-results.xml",
     "build-only": "vite build",
     "type-check": "vue-tsc --build --force",
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore",
