@@ -79,7 +79,7 @@ export default defineComponent({
 
 <style scoped>
 .page-container {
-  margin: 0px 110px;
+  margin: 0px 9vw;
 }
 
 .section-container {
