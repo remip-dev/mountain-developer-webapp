@@ -57,6 +57,10 @@ jobs:
         with:
           name: build-${{ env.version }}
           path: ./dist
+      - name: Print current working directory and contents
+        run: |
+          pwd
+          ls -la
 
       - name: Upload latest build artifact to branch
         run: |
