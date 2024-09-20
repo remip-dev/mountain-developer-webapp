@@ -57,16 +57,27 @@ jobs:
         with:
           name: build-${{ env.version }}
           path: ./dist
-      - name: Check dist contents
-        run: ls -la ./dist
 
       - name: Upload latest build artifact to branch
         run: |
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
+
+          # Create a temporary directory to store dist files
+          mkdir -p temp_dist
+          cp -r ./dist/* temp_dist/
+
           git checkout -b builds || git checkout builds
+
+          # Clean the branch
           rm -rf *
-          cp -r ./dist/* .
+
+          # Copy files from temp directory to the current branch
+          cp -r temp_dist/* .
+
+          # Clean up temp directory
+          rm -rf temp_dist
+
           git add .
           git commit -m "Update latest build"
           git push origin builds --force
