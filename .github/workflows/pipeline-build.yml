@@ -5,8 +5,7 @@
 # 4. Format the code
 # 5. Build the app
 # 6. Run the tests
-# 7. Generate a test report
-# 8. Upload the build artifact
+# 7. Upload the build artifact
 
 name: Build Pipeline
 
@@ -39,9 +38,6 @@ jobs:
 
       - name: Run tests
         run: npm run test:unit
-
-      - name: Generate test report
-        run: npm run test:report
 
       - name: Upload build artifact
         uses: actions/upload-artifact@v4
