@@ -1,13 +1,20 @@
-# The Build Pipeline follows the next steps :
-# 1. Checkout the code
-# 2. Install the Node environment
-# 3. Install the dependencies
-# 4. Format the code
-# 5. Build the app
-# 6. Run the tests
-# 7. Generate a version number
-# 8. Upload the build artifact with version number
-# 9. Upload the build artifact as latest
+# The Build Pipeline is responsible for preparing a production-ready build of the application.
+# It validates the code by running tests and ensures the build process completes successfully.
+# This pipeline also stores the build artifact on a dedicated 'builds' branch,
+# which is later used by the deploy pipeline to ensure that only the most recent validated code
+# is deployed to the production environment.
+# The pipeline achieves the following steps:
+# 1. Checkout the code from the main branch.
+# 2. Install the Node.js environment to ensure a consistent environment.
+# 3. Install all dependencies needed for the build and tests.
+# 4. Format the code using Prettier to maintain code style.
+# 5. Build the app, generating the production files in the 'dist' directory.
+# 6. Run unit tests to validate the code.
+# 7. Generate a version number based on the current timestamp for tracking purposes.
+# 8. Upload the build artifact with the version number for historical reference.
+# 9. Upload the build artifact to the 'builds' branch as the latest build.
+#    This will overwrite any previous build in the 'builds' branch, ensuring
+#    that the branch always contains the most up-to-date build artifact.
 
 name: Build Pipeline
 
@@ -51,8 +58,13 @@ jobs:
           name: build-${{ env.version }}
           path: ./dist
 
-      - name: Upload build artifact as latest
-        uses: actions/upload-artifact@v4
-        with:
-          name: build-latest
-          path: ./dist
+      - name: Upload latest build artifact to branch
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          git checkout -b builds || git checkout builds
+          rm -rf *
+          mv ../dist/* .
+          git add .
+          git commit -m "Update latest build"
+          git push origin builds --force
