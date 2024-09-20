@@ -5,7 +5,9 @@
 # 4. Format the code
 # 5. Build the app
 # 6. Run the tests
-# 7. Upload the build artifact
+# 7. Generate a version number
+# 8. Upload the build artifact with version number
+# 9. Upload the build artifact as latest
 
 name: Build Pipeline
 
@@ -39,8 +41,17 @@ jobs:
       - name: Run tests
         run: npm run test:unit
 
-      - name: Upload build artifact
+      - name: Generate version number
+        run: echo "version=$(date +%Y%m%d%H%M%S)" >> $GITHUB_ENV
+
+      - name: Upload build artifact with version
         uses: actions/upload-artifact@v4
         with:
-          name: build-output
+          name: build-${{ env.version }}
+          path: ./dist
+
+      - name: Upload build artifact as latest
+        uses: actions/upload-artifact@v4
+        with:
+          name: build-latest
           path: ./dist
