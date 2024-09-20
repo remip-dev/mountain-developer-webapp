@@ -20,6 +20,9 @@ on:
   pull_request:
     branches:
       - main
+  push:
+    branches:
+      - main
   workflow_dispatch:
 
 jobs:
@@ -50,13 +53,15 @@ jobs:
       - name: Generate version number
         run: echo "version=$(date +%Y%m%d%H%M%S)" >> $GITHUB_ENV
 
-      - name: Upload build artifact with version
+      - name: Upload build artifact with version (only on push to main)
+        if: github.ref == 'refs/heads/main'
         uses: actions/upload-artifact@v4
         with:
           name: build-${{ env.version }}
           path: ./dist
 
-      - name: Upload latest build artifact to branch
+      - name: Upload build artifact as latest (only on push to main)
+        if: github.ref == 'refs/heads/main'
         uses: actions/upload-artifact@v4
         with:
           name: build-latest
