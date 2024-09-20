@@ -1,16 +1,20 @@
 name: Deploy Pipeline
 
 on:
-  push:
-    branches:
-      - main
-  workflow_dispatch:
+  workflow_run:
+    workflows: ['Build Pipeline']
+    types:
+      - completed
 
 jobs:
   deploy:
+    if: ${{ github.event.workflow_run.head_branch == 'main' }}
     runs-on: ubuntu-latest
 
     steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
       - name: Download build artefact
         uses: actions/download-artifact@v4
         with:
@@ -20,5 +24,5 @@ jobs:
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          github-token: ${{ github.token }}
           publish_dir: ./build
