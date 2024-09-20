@@ -1,7 +1,7 @@
 # The Build Pipeline is responsible for preparing a production-ready build of the application.
 # It validates the code by running tests and ensures the build process completes successfully.
-# This pipeline upload two artefacts: one with a version number to have an historic,
-# another one with tag latest will be used by deploy pipeline
+# This pipeline uploads two artifacts: one with a version number for historical reference,
+# and another one with the tag 'latest' to be used by the deploy pipeline.
 
 # The pipeline achieves the following steps:
 # 1. Checkout the code from the main branch.
@@ -12,7 +12,7 @@
 # 6. Run unit tests to validate the code.
 # 7. Generate a version number based on the current timestamp for tracking purposes.
 # 8. Upload the build artifact with the version number for historical reference.
-# 9. Upload the build artifact as latest
+# 9. Upload the build artifact as 'latest'.
 
 name: Build Pipeline
 

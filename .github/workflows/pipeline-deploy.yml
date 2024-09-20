@@ -1,14 +1,3 @@
-# The Deploy Pipeline is responsible for deploying the most recent validated build to production.
-# It retrieves the build artifact stored in the 'builds' branch (created by the build pipeline),
-# ensuring that only the latest successfully validated code is deployed.
-# By separating the deploy pipeline from the build process, we ensure that deployment only occurs
-# after the code has been thoroughly tested and validated.
-# The pipeline follows these steps:
-# 1. Checkout the latest build artifact from the 'builds' branch.
-#    The 'builds' branch is a dedicated branch where the latest production-ready build is stored.
-# 2. Deploy the build files from the 'dist' directory (checked out from the 'builds' branch).
-#    This step ensures that only the most recent validated build is deployed.
-
 name: Deploy Pipeline
 
 on:
@@ -22,13 +11,15 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout latest build artifact
-        uses: actions/checkout@v4
+      - name: Download build artefact
+        uses: actions/download-artifact@v4
         with:
-          ref: builds
+          name: build-latest
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          path: ./build
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./build
