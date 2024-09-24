@@ -33,18 +33,20 @@ const mediumSecondImage = ref('')
 
 async function importImage(imageName: string, size: string) {
   const imagesContext: Record<string, () => Promise<any>> = import.meta.glob(
-    '../assets/images/**/*.webp'
+    '../../assets/images/**/*.webp'
   )
-  const imagePath = `../assets/images/${imageName}_${size}.webp`
+  const imagePath = `../../assets/images/${imageName}_${size}.webp`
+
+  console.log(`Trying to load image: ${imagePath}`)
 
   if (imagesContext[imagePath]) {
     const module = await imagesContext[imagePath]()
+    console.log(`Image module loaded: `, module)
 
-    if (typeof module === 'function') {
-      return (await module()).default
-    } else {
-      return module.default
-    }
+    return module.default || ''
+  } else {
+    console.error(`Image not found: ${imagePath}`)
+    return ''
   }
 }
 
@@ -78,3 +80,11 @@ onMounted(() => {
     />
   </div>
 </template>
+
+<style scoped>
+.first-image,
+.second-image {
+  width: 100%;
+  object-fit: contain;
+}
+</style>
