@@ -46,23 +46,28 @@
         />
       </div>
     </div>
+    <div class="section-three">
+      <MySkills />
+    </div>
   </div>
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue'
 import ResponsiveImage from '@/components/ResponsiveImage.vue'
-import smallFollowMe from '@/assets/images/follow-me/follow_me_small.webp'
-import mediumFollowMe from '@/assets/images/follow-me/follow_me_medium.webp'
-import largeFollowMe from '@/assets/images/follow-me/follow_me_large.webp'
-import smallDrawing from '@/assets/images/map_drawing/map_drawing_small.webp'
-import mediumDrawing from '@/assets/images/map_drawing/map_drawing_medium.webp'
-import largeDrawing from '@/assets/images/map_drawing/map_drawing_large.webp'
+import smallFollowMe from '@/assets/images/followMe/follow_me_small.webp'
+import mediumFollowMe from '@/assets/images/followMe/follow_me_medium.webp'
+import largeFollowMe from '@/assets/images/followMe/follow_me_large.webp'
+import smallDrawing from '@/assets/images/mapDrawing/map_drawing_small.webp'
+import mediumDrawing from '@/assets/images/mapDrawing/map_drawing_medium.webp'
+import largeDrawing from '@/assets/images/mapDrawing/map_drawing_large.webp'
+import MySkills from '@/components/mySkills/MySkills.vue'
 
 export default defineComponent({
   name: 'HomeView',
   components: {
-    ResponsiveImage
+    ResponsiveImage,
+    MySkills
   },
   setup() {
     return {
