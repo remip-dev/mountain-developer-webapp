@@ -94,10 +94,16 @@ function handleEventSkill() {
   padding: 30px;
 
   background-color: var(--secondary-color);
-  height: auto;
-  width: auto;
-  max-width: 950px;
+  height: 500px;
+  width: 950px;
   align-content: space-between;
+}
+
+.top-skill,
+.devops-skill,
+.frontend-skill,
+.bag {
+  position: relative;
 }
 
 .top-skill {

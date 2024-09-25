@@ -38,7 +38,15 @@ const showMountainImage = ref(true)
 const showSkillsImage = ref(false)
 const showModal = ref(false)
 
-const handleHoverAndClick = () => {
+let eventHover = false
+
+const handleHoverAndClick = (event: MouseEvent) => {
+  if (event.type === 'mouseenter' || event.type === 'mouseleave') {
+    eventHover = true
+  }
+  if (event.type === 'click' && eventHover === true) {
+    return
+  }
   showMountainImage.value = !showMountainImage.value
   showSkillsImage.value = !showSkillsImage.value
   showModal.value = !showModal.value
@@ -83,31 +91,36 @@ onMounted(() => {
     <ResponsiveImage
       v-if="smallMountainImage && mediumMountainImage"
       class="mountain-image"
+      :class="{ hidden: !showMountainImage }"
       :smallImage="smallMountainImage"
       :mediumImage="mediumMountainImage"
       alt="Un étalage de matériel de montagne"
-      :style="{ display: showMountainImage ? 'block' : 'none' }"
     />
     <ResponsiveImage
       v-if="smallSkillsImage && mediumSkillsImage"
       class="skills-image"
+      :class="{ hidden: showMountainImage }"
       :smallImage="smallSkillsImage"
       :mediumImage="mediumSkillsImage"
       alt="Une liste de compétences pour le développement web"
-      :style="{ display: showSkillsImage ? 'block' : 'none' }"
     />
-    <SkillModal
-      :title="title"
-      :description="description"
-      :style="{ display: showModal ? 'block' : 'none' }"
-    />
+    <SkillModal :title="title" :description="description" :class="{ hidden: showMountainImage }" />
   </div>
 </template>
 
 <style scoped>
 .mountain-image,
 .skills-image {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   object-fit: contain;
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.hidden {
+  opacity: 0;
 }
 </style>

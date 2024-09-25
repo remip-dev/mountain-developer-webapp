@@ -66,19 +66,19 @@ onMounted(() => {
   <div>
     <ResponsiveImage
       v-if="smallFirstImage && mediumFirstImage"
-      class="first-image"
+      class="first-image transition"
+      :class="{ hidden: isSkillVisible }"
       :smallImage="smallFirstImage"
       :mediumImage="mediumFirstImage"
       :alt="alt"
-      :style="{ display: !isSkillVisible ? 'block' : 'none' }"
     />
     <ResponsiveImage
       v-if="smallSecondImage && mediumSecondImage"
-      class="second-image"
+      class="second-image transition"
+      :class="{ hidden: !isSkillVisible }"
       :smallImage="smallSecondImage"
       :mediumImage="mediumSecondImage"
       :alt="alt"
-      :style="{ display: isSkillVisible ? 'block' : 'none' }"
     />
   </div>
 </template>
@@ -86,7 +86,16 @@ onMounted(() => {
 <style scoped>
 .first-image,
 .second-image {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   object-fit: contain;
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.hidden {
+  opacity: 0;
 }
 </style>
