@@ -81,6 +81,7 @@ onMounted(() => {
     @click="handleHoverAndClick"
   >
     <ResponsiveImage
+      v-if="smallMountainImage && mediumMountainImage"
       class="mountain-image"
       :smallImage="smallMountainImage"
       :mediumImage="mediumMountainImage"
@@ -88,6 +89,7 @@ onMounted(() => {
       :style="{ display: showMountainImage ? 'block' : 'none' }"
     />
     <ResponsiveImage
+      v-if="smallSkillsImage && mediumSkillsImage"
       class="skills-image"
       :smallImage="smallSkillsImage"
       :mediumImage="mediumSkillsImage"

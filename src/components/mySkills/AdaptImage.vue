@@ -65,6 +65,7 @@ onMounted(() => {
 <template>
   <div>
     <ResponsiveImage
+      v-if="smallFirstImage && mediumFirstImage"
       class="first-image"
       :smallImage="smallFirstImage"
       :mediumImage="mediumFirstImage"
@@ -72,6 +73,7 @@ onMounted(() => {
       :style="{ display: !isSkillVisible ? 'block' : 'none' }"
     />
     <ResponsiveImage
+      v-if="smallSecondImage && mediumSecondImage"
       class="second-image"
       :smallImage="smallSecondImage"
       :mediumImage="mediumSecondImage"

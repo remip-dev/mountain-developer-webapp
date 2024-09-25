@@ -40,7 +40,7 @@ function handleEventSkill() {
         @skills="handleEventSkill"
         class="devops-skill"
         mountainImage="mySkills/devops/mountain_devops"
-        skillsImage=""
+        skillsImage="mySkills/devops/devops"
         title="Compétences DevOps"
         description="Je suis équipé de la tête aux pieds pour supporter tout le cycle de 
         vie des applications !
