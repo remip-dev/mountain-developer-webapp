@@ -101,6 +101,7 @@ onMounted(() => {
       @mouseenter="updateModalPosition"
       @mouseleave="handleHoverAndClick"
       @click="handleHoverAndClick"
+      class="trigger-div"
     >
       <ResponsiveImage
         v-if="smallMountainImage && mediumMountainImage"
@@ -120,11 +121,11 @@ onMounted(() => {
       />
     </div>
     <SkillModal
+      v-if="!showMountainImage"
       class="modal"
       :title="title"
       :description="description"
       :class="{
-        'hidden-modal': showMountainImage,
         'above-modal': modalPosition === 'above',
         'below-modal': modalPosition === 'below'
       }"
@@ -142,13 +143,6 @@ onMounted(() => {
   object-fit: contain;
   opacity: 1;
   transition: opacity 0.5s ease-in-out;
-}
-.modal {
-  display: block;
-}
-
-.hidden-modal {
-  display: none;
 }
 
 .above-modal {
