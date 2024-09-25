@@ -7,7 +7,6 @@ const isSkillVisible = ref(false)
 
 function handleEventSkill() {
   isSkillVisible.value = !isSkillVisible.value
-  console.log(isSkillVisible)
 }
 </script>
 
@@ -17,7 +16,8 @@ function handleEventSkill() {
     <div class="skills-container">
       <SkillGroup
         @skills="handleEventSkill"
-        class="top-skill"
+        class="backend skill"
+        :class="{ blink: !isSkillVisible }"
         mountainImage="mySkills/backend/mountain_backend"
         skillsImage="mySkills/backend/backend"
         title="Compétences Backend"
@@ -27,7 +27,8 @@ function handleEventSkill() {
       />
       <SkillGroup
         @skills="handleEventSkill"
-        class="top-skill"
+        class="practices skill"
+        :class="{ blink: !isSkillVisible }"
         mountainImage="mySkills/practices/mountain_practices"
         skillsImage="mySkills/practices/practices"
         title="Bonnes pratiques"
@@ -38,7 +39,8 @@ function handleEventSkill() {
       />
       <SkillGroup
         @skills="handleEventSkill"
-        class="devops-skill"
+        class="devops skill"
+        :class="{ blink: !isSkillVisible }"
         mountainImage="mySkills/devops/mountain_devops"
         skillsImage="mySkills/devops/devops"
         title="Compétences DevOps"
@@ -50,7 +52,8 @@ function handleEventSkill() {
       />
       <SkillGroup
         @skills="handleEventSkill"
-        class="frontend-skill"
+        class="frontend skill"
+        :class="{ blink: !isSkillVisible }"
         mountainImage="mySkills/frontend/mountain_frontend"
         skillsImage="mySkills/frontend/frontend"
         title="Compétences Frontend"
@@ -89,51 +92,206 @@ function handleEventSkill() {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
   border-radius: 30px;
   padding: 30px;
-
   background-color: var(--secondary-color);
-  height: 500px;
-  width: 950px;
+  height: 570px;
+  width: 850px;
   align-content: space-between;
+  align-items: flex-end;
 }
 
-.top-skill,
-.devops-skill,
-.frontend-skill,
+.backend {
+  max-width: 450px;
+  max-height: 242.44px;
+  width: 100%;
+  height: 100%;
+}
+
+.practices {
+  max-width: 380px;
+  max-height: 245.09px;
+  width: 100%;
+  height: 100%;
+}
+
+.devops {
+  max-width: 316px;
+  max-height: 294.66px;
+  width: 100%;
+  height: 100%;
+}
+
+.frontend {
+  max-height: 309.91px;
+  max-width: 235px;
+  width: 100%;
+  height: 100%;
+}
+
+.bag {
+  max-width: 280px;
+  max-height: 248.14px;
+  width: 100%;
+  height: 100%;
+}
+
+.skill,
 .bag {
   position: relative;
-}
-
-.top-skill {
-  flex-basis: 50%;
-}
-
-.devops-skill,
-.frontend-skill,
-.bag {
-  display: flex;
-  flex-direction: column;
-  justify-content: end;
-}
-
-.devops-skill,
-.bag {
-  flex-basis: 37%;
-  display: flex;
-  flex-direction: column;
-  justify-content: end;
-}
-
-.frontend-skill {
-  flex-basis: 26%;
 }
 
 .worker {
   position: absolute;
   top: 50%;
-  left: 0;
-  width: 15%;
+  right: 90%;
+  width: 100%;
+  max-width: 190px;
+}
+
+@keyframes blink {
+  0% {
+    background-color: var(--secondary-color);
+  }
+  50% {
+    background-color: var(--primary-color);
+  }
+  100% {
+    background-color: var(--secondary-color);
+  }
+}
+
+.blink {
+  animation: blink 1.5s infinite;
+  border-radius: 30px;
+}
+
+@media (max-width: 1220px) {
+  .skills-container {
+    padding: 10px;
+  }
+
+  .worker {
+    right: 97%;
+    max-width: 170px;
+    top: 40%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .skills-container {
+    width: 650px;
+    height: 450px;
+  }
+
+  .backend {
+    max-width: 330px;
+    max-height: 177.78px;
+  }
+
+  .practices {
+    max-width: 270px;
+    max-height: 174.14px;
+  }
+
+  .devops {
+    max-width: 250px;
+    max-height: 246.56px;
+  }
+
+  .frontend {
+    max-height: 263.75px;
+    max-width: 200px;
+  }
+
+  .bag {
+    max-width: 180px;
+    max-height: 167.39px;
+  }
+
+  .worker {
+    right: 97%;
+    max-width: 150px;
+    top: 40%;
+  }
+}
+
+@media (max-width: 780px) {
+  .skills-container {
+    width: 450px;
+    height: 1250px;
+    justify-content: center;
+  }
+
+  .skill,
+  .bag {
+    max-width: 390px;
+  }
+
+  .backend {
+    max-height: 210.11px;
+  }
+
+  .practices {
+    max-height: 241.8px;
+  }
+
+  .devops {
+    max-height: 363.67px;
+  }
+
+  .frontend {
+    max-height: 329.69px;
+    max-width: 250px;
+  }
+
+  .bag {
+    max-width: 200px;
+    max-height: 186px;
+  }
+
+  .worker {
+    right: 75%;
+  }
+}
+
+@media (max-width: 600px) {
+  .skills-container {
+    width: 300px;
+    height: 1120px;
+    justify-content: center;
+  }
+
+  .skill,
+  .bag {
+    max-width: 300px;
+  }
+
+  .backend {
+    max-height: 161.61px;
+  }
+
+  .practices {
+    max-height: 193.48px;
+  }
+
+  .devops {
+    max-height: 279.73px;
+  }
+
+  .frontend {
+    max-height: 309.91px;
+    max-width: 235px;
+  }
+
+  .bag {
+    max-width: 150px;
+    max-height: 139.5px;
+  }
+
+  .worker {
+    right: 70%;
+  }
 }
 </style>

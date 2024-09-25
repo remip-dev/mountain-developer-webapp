@@ -26,9 +26,10 @@ defineProps({
 div {
   display: flex;
   flex-direction: column;
-  justify-content: baseline;
-  align-items: center;
+  justify-content: center;
+  align-items: flex-start;
   position: absolute;
+  left: 50px;
   z-index: 1001;
   border: solid 1px;
   border-radius: 30px;
@@ -45,6 +46,34 @@ h2 {
 }
 
 p {
-  margin-bottom: 0;
+  margin: 0;
+}
+
+@media (max-width: 1220px) {
+  div {
+    width: 300px;
+    left: 0px;
+  }
+}
+
+@media (max-width: 1000px) {
+  div {
+    padding: 30px;
+    width: 250px;
+    left: -10px;
+  }
+}
+
+@media (max-width: 780px) {
+  div {
+    left: 0px;
+  }
+}
+
+@media (max-width: 600px) {
+  div {
+    width: 250px;
+    left: 0px;
+  }
 }
 </style>

@@ -37,6 +37,7 @@ const mediumSkillsImage = ref('')
 const showMountainImage = ref(true)
 const showSkillsImage = ref(false)
 const showModal = ref(false)
+const modalPosition = ref('')
 
 let eventHover = false
 
@@ -51,6 +52,19 @@ const handleHoverAndClick = (event: MouseEvent) => {
   showSkillsImage.value = !showSkillsImage.value
   showModal.value = !showModal.value
   emit('skills')
+}
+
+const updateModalPosition = (event: MouseEvent) => {
+  const rect = (event.currentTarget as HTMLElement).getBoundingClientRect()
+  const availableSpaceBelow = window.innerHeight - rect.bottom
+  const availableSpaceAbove = rect.top
+
+  if (availableSpaceBelow < 400 && availableSpaceAbove > 400) {
+    modalPosition.value = 'above'
+  } else {
+    modalPosition.value = 'below'
+  }
+  handleHoverAndClick(event)
 }
 
 async function importImage(imageName: string, size: string) {
@@ -83,28 +97,39 @@ onMounted(() => {
 </script>
 
 <template>
-  <div
-    @mouseenter="handleHoverAndClick"
-    @mouseleave="handleHoverAndClick"
-    @click="handleHoverAndClick"
-  >
-    <ResponsiveImage
-      v-if="smallMountainImage && mediumMountainImage"
-      class="mountain-image"
-      :class="{ hidden: !showMountainImage }"
-      :smallImage="smallMountainImage"
-      :mediumImage="mediumMountainImage"
-      alt="Un étalage de matériel de montagne"
+  <div>
+    <div
+      @mouseenter="updateModalPosition"
+      @mouseleave="handleHoverAndClick"
+      @click="handleHoverAndClick"
+    >
+      <ResponsiveImage
+        v-if="smallMountainImage && mediumMountainImage"
+        class="mountain-image"
+        :class="{ hidden: !showMountainImage }"
+        :smallImage="smallMountainImage"
+        :mediumImage="mediumMountainImage"
+        alt="Un étalage de matériel de montagne"
+      />
+      <ResponsiveImage
+        v-if="smallSkillsImage && mediumSkillsImage"
+        class="skills-image"
+        :class="{ hidden: showMountainImage }"
+        :smallImage="smallSkillsImage"
+        :mediumImage="mediumSkillsImage"
+        alt="Une liste de compétences pour le développement web"
+      />
+    </div>
+    <SkillModal
+      class="modal"
+      :title="title"
+      :description="description"
+      :class="{
+        'hidden-modal': showMountainImage,
+        'above-modal': modalPosition === 'above',
+        'below-modal': modalPosition === 'below'
+      }"
     />
-    <ResponsiveImage
-      v-if="smallSkillsImage && mediumSkillsImage"
-      class="skills-image"
-      :class="{ hidden: showMountainImage }"
-      :smallImage="smallSkillsImage"
-      :mediumImage="mediumSkillsImage"
-      alt="Une liste de compétences pour le développement web"
-    />
-    <SkillModal :title="title" :description="description" :class="{ hidden: showMountainImage }" />
   </div>
 </template>
 
@@ -119,8 +144,24 @@ onMounted(() => {
   opacity: 1;
   transition: opacity 0.5s ease-in-out;
 }
+.modal {
+  display: block;
+}
+
+.hidden-modal {
+  display: none;
+}
+
+.above-modal {
+  bottom: 102%;
+}
+
+.below-modal {
+  top: 102%;
+}
 
 .hidden {
   opacity: 0;
+  transition: opacity 0.5s ease-in-out;
 }
 </style>

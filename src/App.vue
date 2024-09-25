@@ -16,6 +16,7 @@ import HeaderComponent from './components/header/HeaderComponent.vue'
 <style scoped>
 .header-container {
   position: fixed;
+  z-index: 3001;
   left: 0px;
   right: 0px;
   top: 0px;
