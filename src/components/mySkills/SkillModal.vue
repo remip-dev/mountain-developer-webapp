@@ -12,18 +12,16 @@ defineProps({
 </script>
 
 <template>
-  <div>
+  <div class="container">
     <h2 class="title">
       {{ title }}
     </h2>
-    <p class="description">
-      {{ description }}
-    </p>
+    <div class="description" v-html="description"></div>
   </div>
 </template>
 
 <style scoped>
-div {
+.container {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -49,15 +47,19 @@ p {
   margin: 0;
 }
 
+.description :deep(span) {
+  font-weight: 700;
+}
+
 @media (max-width: 1220px) {
-  div {
+  .container {
     width: 300px;
     left: 0px;
   }
 }
 
 @media (max-width: 1000px) {
-  div {
+  .container {
     padding: 30px;
     width: 250px;
     left: -10px;
@@ -65,13 +67,13 @@ p {
 }
 
 @media (max-width: 780px) {
-  div {
+  .container {
     left: 0px;
   }
 }
 
 @media (max-width: 600px) {
-  div {
+  .container {
     width: 250px;
     left: 0px;
   }

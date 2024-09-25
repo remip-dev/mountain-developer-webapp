@@ -57,9 +57,8 @@ const handleHoverAndClick = (event: MouseEvent) => {
 const updateModalPosition = (event: MouseEvent) => {
   const rect = (event.currentTarget as HTMLElement).getBoundingClientRect()
   const availableSpaceBelow = window.innerHeight - rect.bottom
-  const availableSpaceAbove = rect.top
 
-  if (availableSpaceBelow < 400 && availableSpaceAbove > 400) {
+  if (availableSpaceBelow < 400) {
     modalPosition.value = 'above'
   } else {
     modalPosition.value = 'below'

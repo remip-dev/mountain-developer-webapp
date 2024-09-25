@@ -100,6 +100,9 @@ export default defineComponent({
   height: 700px;
 }
 
+.section-three {
+  margin: 100px 0px;
+}
 .fm-image-container,
 .md-image-container,
 .text-container {

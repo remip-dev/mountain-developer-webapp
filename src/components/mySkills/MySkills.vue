@@ -21,9 +21,9 @@ function handleEventSkill() {
         mountainImage="mySkills/backend/mountain_backend"
         skillsImage="mySkills/backend/backend"
         title="Compétences Backend"
-        description="Je suis équipé de tous les outils nécessaires pour développer 
-        et déployer une API robuste, testée et documentée dans un environnement 
-        JavaScript."
+        description="<p>Je suis équipé de tous les outils nécessaires pour <span>développer</span> 
+        et <span>déployer</span> une <span>API</span> robuste, testée et documentée dans un environnement 
+        <span>JavaScript</span>.</p>"
       />
       <SkillGroup
         @skills="handleEventSkill"
@@ -32,10 +32,10 @@ function handleEventSkill() {
         mountainImage="mySkills/practices/mountain_practices"
         skillsImage="mySkills/practices/practices"
         title="Bonnes pratiques"
-        description="J’ai été formé aux techniques de survie du développement logiciel. 
-        Grâce aux bonnes pratiques de développement, je suis capable de livrer des 
-        applications conçues de manière réfléchie, facilement scalables et maintenables.
-        Les développeurs futurs du projet n’en seront que plus heureux !"
+        description="<p>J’ai été formé aux <span>techniques de survie</span> du développement logiciel.</p>
+        <p>Grâce aux <span>bonnes pratiques</span> de développement, je suis capable de livrer des 
+        <span>applications</span> conçues de manière <span>réfléchie</span>, facilement <span>scalables</span> et <span>maintenables</span>.</p>
+        <p>Les développeurs futurs du projet n’en seront que <span>plus heureux</span> !</p>"
       />
       <SkillGroup
         @skills="handleEventSkill"
@@ -44,11 +44,11 @@ function handleEventSkill() {
         mountainImage="mySkills/devops/mountain_devops"
         skillsImage="mySkills/devops/devops"
         title="Compétences DevOps"
-        description="Je suis équipé de la tête aux pieds pour supporter tout le cycle de 
-        vie des applications !
-        Je suis capable de gérer l'intégration continue, le déploiement continu et 
-        l'infrastructure cloud. Je m'assure que chaque application est déployée de manière 
-        fluide et efficace."
+        description="<p>Je suis équipé de la tête aux pieds pour supporter tout le <span>cycle de 
+        vie</span> des applications !</p>
+        <p>Je suis capable de gérer <span>l'intégration continue</span>, le <span>déploiement continu</span> et 
+        l'infrastructure <span>cloud</span>. Je m'assure que chaque application est déployée de manière 
+        <span>fluide</span> et <span>efficace</span>.</p>"
       />
       <SkillGroup
         @skills="handleEventSkill"
@@ -57,10 +57,10 @@ function handleEventSkill() {
         mountainImage="mySkills/frontend/mountain_frontend"
         skillsImage="mySkills/frontend/frontend"
         title="Compétences Frontend"
-        description="Bien que spécialiste backend, je sais aussi immortaliser les plus beaux 
-        points de vue.
-        Je suis capable de réaliser des maquettes d’interfaces utilisateurs agréables et 
-        intuitives puis je sais les développer grâce à des frameworks JavaScript modernes."
+        description="<p>Bien que spécialiste backend, je sais aussi immortaliser les <span>plus beaux 
+        points de vue</span>.</p>
+        <p>Je suis capable de réaliser des <span>maquettes</span> d’interfaces utilisateurs <span>agréables</span> et 
+        <span>intuitives</span> puis je sais les développer grâce à des <span>frameworks</span> JavaScript <span>modernes</span>.</p>"
       />
       <AdaptImage
         class="bag"
@@ -86,6 +86,10 @@ function handleEventSkill() {
   flex-direction: column;
   align-items: center;
   position: relative;
+}
+
+.skills-section-container h2 {
+  margin-bottom: 55px;
 }
 
 .skills-container {
