@@ -37,11 +37,8 @@ async function importImage(imageName: string, size: string) {
   )
   const imagePath = `../../assets/images/${imageName}_${size}.webp`
 
-  console.log(`Trying to load image: ${imagePath}`)
-
   if (imagesContext[imagePath]) {
     const module = await imagesContext[imagePath]()
-    console.log(`Image module loaded: `, module)
 
     return module.default || ''
   } else {

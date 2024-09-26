@@ -49,6 +49,9 @@
     <div class="section-three">
       <MySkills />
     </div>
+    <div class="section-button">
+      <SimpleButton @clicked="handleClickButton" text="PRENEZ CONTACT !" />
+    </div>
   </div>
 </template>
 
@@ -62,21 +65,31 @@ import smallDrawing from '@/assets/images/mapDrawing/map_drawing_small.webp'
 import mediumDrawing from '@/assets/images/mapDrawing/map_drawing_medium.webp'
 import largeDrawing from '@/assets/images/mapDrawing/map_drawing_large.webp'
 import MySkills from '@/components/mySkills/MySkills.vue'
+import SimpleButton from '@/components/SimpleButton.vue'
+import { useRouter } from 'vue-router'
 
 export default defineComponent({
   name: 'HomeView',
   components: {
     ResponsiveImage,
-    MySkills
+    MySkills,
+    SimpleButton
   },
   setup() {
+    const router = useRouter()
+
+    function handleClickButton() {
+      router.push({ name: 'contact' })
+    }
+
     return {
       smallFollowMe,
       mediumFollowMe,
       largeFollowMe,
       smallDrawing,
       mediumDrawing,
-      largeDrawing
+      largeDrawing,
+      handleClickButton
     }
   }
 })
@@ -103,6 +116,13 @@ export default defineComponent({
 .section-three {
   margin: 100px 0px;
 }
+
+.section-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .fm-image-container,
 .md-image-container,
 .text-container {

@@ -35,16 +35,16 @@ defineProps({
   background-color: var(--primary-color);
   width: 400px;
   padding: 45px;
+  padding-bottom: 20px;
   color: var(--black);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
 h2 {
-  margin-top: 0;
+  margin: 0;
 }
 
-p {
-  margin: 0;
+.description :deep(p) {
 }
 
 .description :deep(span) {
@@ -61,6 +61,7 @@ p {
 @media (max-width: 1000px) {
   .container {
     padding: 30px;
+    padding-bottom: 15px;
     width: 250px;
     left: -10px;
   }

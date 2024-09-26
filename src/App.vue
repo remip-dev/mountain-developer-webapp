@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import HeaderComponent from './components/header/HeaderComponent.vue'
+import SimpleFooter from './components/SimpleFooter.vue'
 </script>
 
 <template>
@@ -10,10 +11,20 @@ import HeaderComponent from './components/header/HeaderComponent.vue'
     <div class="main-content-container">
       <RouterView />
     </div>
+    <div>
+      <SimpleFooter />
+    </div>
   </div>
 </template>
 
 <style scoped>
+#app {
+  min-height: 93vh;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 .header-container {
   position: fixed;
   z-index: 3001;
