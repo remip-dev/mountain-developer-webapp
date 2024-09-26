@@ -37,6 +37,8 @@ async function loadImages() {
   mediumFirstImage.value = await importImage(props.firstImage, 'medium')
   smallSecondImage.value = await importImage(props.secondImage, 'small')
   mediumSecondImage.value = await importImage(props.secondImage, 'medium')
+  console.log('Small Image:', smallFirstImage.value)
+  console.log('Medium Image:', mediumFirstImage.value)
 }
 
 onMounted(() => {

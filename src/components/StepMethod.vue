@@ -6,7 +6,7 @@ import { ref, onMounted } from 'vue'
 
 const props = defineProps({
   number: {
-    type: Number,
+    type: String,
     required: true
   },
   imagePath: {
@@ -50,36 +50,51 @@ onMounted(() => {
 </script>
 
 <template>
-  <div class="container" :class="{ orange: color === Color.Orange }">
+  <div class="container">
     <div class="left-container">
-      <div class="number">{{ number }}</div>
+      <div class="number" :class="{ beige: color === Color.Orange }">{{ number }}</div>
       <ResponsiveImage
         v-if="smallImage && mediumImage && largeImage"
+        class="image"
         :smallImage="smallImage"
         :mediumImage="mediumImage"
         :largeImage="largeImage"
         :alt="altImage"
       />
     </div>
-    <div class="right-container">
+    <div class="right-container" :class="{ beige: color === Color.Orange }">
       <h2>{{ title }}</h2>
-      <div v-html="description"></div>
+      <div class="description" v-html="description"></div>
     </div>
+    <div class="background" :class="{ orange: color === Color.Orange }"></div>
   </div>
 </template>
 
 <style scoped>
+@import url('https://fonts.googleapis.com/css2?family=Love+Ya+Like+A+Sister&display=swap');
+
+.background {
+  position: absolute;
+  z-index: -1000;
+  width: 99vw;
+  height: 100%;
+  background-color: var(--primary-color);
+}
 .container {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: start;
   flex-wrap: wrap;
-  background-color: var(--primary-color);
+  min-height: 500px;
 }
 
 .orange {
   background-color: var(--tertiary-color);
+}
+
+.beige {
+  color: var(--primary-color);
 }
 
 .left-container {
@@ -95,5 +110,32 @@ onMounted(() => {
   flex-direction: column;
   justify-content: start;
   align-items: start;
+}
+
+.left-container,
+.right-container {
+  margin: 50px 0;
+  width: 450px;
+}
+
+.number {
+  font-size: 241px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  line-height: 265px;
+  margin-right: 8vw;
+  z-index: 100;
+  font-family: 'Love Ya Like A Sister', cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.image {
+  position: absolute;
+  top: 130px;
+  left: -100px;
+  width: 400px;
+  z-index: 0;
 }
 </style>

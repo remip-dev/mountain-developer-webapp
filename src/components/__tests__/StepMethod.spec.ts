@@ -25,7 +25,7 @@ vi.mock('@/utils/imageLoader', () => ({
 beforeEach(async () => {
   wrapper = mount(StepMethod, {
     props: {
-      number: 1,
+      number: '01',
       imagePath: 'myMethod/step01/step_01',
       title: 'Step 1',
       description: '<p>Hi guys !</p>',
@@ -38,13 +38,13 @@ beforeEach(async () => {
 
 describe('StepMethod.vue', () => {
   it('renders with its values corresponding to its props', () => {
-    expect(wrapper.find('.number').text()).toBe('1')
-    expect(wrapper.find('.step-image').attributes('src')).toBe(
+    expect(wrapper.find('.number').text()).toBe('01')
+    expect(wrapper.find('.image').attributes('src')).toBe(
       '/src/assets/images/myMethod/step01/step_01_small.webp'
     )
-    expect(wrapper.find('.step-image').attributes('alt')).toBe('image description')
-    expect(wrapper.find('.step-title').text()).toBe('Step 1')
-    expect(wrapper.find('.step-description').text()).toBe('Hi guys !')
-    expect(wrapper.find('.container').classes()).toContain('orange')
+    expect(wrapper.find('.image').attributes('alt')).toBe('image description')
+    expect(wrapper.find('h2').text()).toBe('Step 1')
+    expect(wrapper.find('.description').text()).toBe('Hi guys !')
+    expect(wrapper.find('.background').classes()).toContain('orange')
   })
 })
