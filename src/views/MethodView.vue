@@ -85,6 +85,6 @@ h1 {
 }
 
 .button-container {
-  padding: 150px;
+  padding: 150px 0;
 }
 </style>

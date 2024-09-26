@@ -32,7 +32,8 @@ import SimpleFooter from './components/SimpleFooter.vue'
   right: 0px;
   top: 0px;
   padding: 30px 30px 0 30px;
-  backdrop-filter: blur(5px);
+  background-color: var(--primary-color);
+  border: none;
 }
 
 .main-content-container {
