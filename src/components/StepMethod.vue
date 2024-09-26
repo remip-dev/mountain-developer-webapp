@@ -50,7 +50,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <div class="container">
+  <div class="container" :class="{ orange: color === Color.Orange }">
     <div class="left-container">
       <div class="number" :class="{ beige: color === Color.Orange }">{{ number }}</div>
       <ResponsiveImage
@@ -66,20 +66,12 @@ onMounted(() => {
       <h2>{{ title }}</h2>
       <div class="description" v-html="description"></div>
     </div>
-    <div class="background" :class="{ orange: color === Color.Orange }"></div>
   </div>
 </template>
 
 <style scoped>
 @import url('https://fonts.googleapis.com/css2?family=Love+Ya+Like+A+Sister&display=swap');
 
-.background {
-  position: absolute;
-  z-index: -1000;
-  width: 99vw;
-  height: 100%;
-  background-color: var(--primary-color);
-}
 .container {
   display: flex;
   flex-direction: row;
@@ -137,5 +129,9 @@ onMounted(() => {
   left: -100px;
   width: 400px;
   z-index: 0;
+}
+
+:deep(.citation) {
+  font-weight: 700;
 }
 </style>

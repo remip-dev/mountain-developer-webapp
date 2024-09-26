@@ -44,9 +44,6 @@ h2 {
   margin: 0;
 }
 
-.description :deep(p) {
-}
-
 .description :deep(span) {
   font-weight: 700;
 }

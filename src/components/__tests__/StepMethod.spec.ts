@@ -45,6 +45,6 @@ describe('StepMethod.vue', () => {
     expect(wrapper.find('.image').attributes('alt')).toBe('image description')
     expect(wrapper.find('h2').text()).toBe('Step 1')
     expect(wrapper.find('.description').text()).toBe('Hi guys !')
-    expect(wrapper.find('.background').classes()).toContain('orange')
+    expect(wrapper.find('.container').classes()).toContain('orange')
   })
 })
