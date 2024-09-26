@@ -96,10 +96,6 @@ export default defineComponent({
 </script>
 
 <style scoped>
-.page-container {
-  margin: 0px 9vw;
-}
-
 .section-container {
   display: flex;
   flex-direction: row;
@@ -121,6 +117,7 @@ export default defineComponent({
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 30px 0px;
 }
 
 .fm-image-container,
@@ -171,10 +168,6 @@ span {
 }
 
 @media (max-width: 1220px) {
-  .page-container {
-    margin: 0px 70px;
-  }
-
   .section-one {
     height: 450px;
   }
@@ -185,10 +178,6 @@ span {
 }
 
 @media (max-width: 1000px) {
-  .page-container {
-    margin: 0px 80px;
-  }
-
   .section-one {
     height: 650px;
     flex-direction: column;
@@ -211,12 +200,6 @@ span {
   }
 }
 
-@media (max-width: 780px) {
-  .page-container {
-    margin: 0px 30px;
-  }
-}
-
 @media (max-width: 600px) {
   .text-container h2 {
     font-size: var(--tablet-normal-font-size);
@@ -228,10 +211,6 @@ span {
 
   .section-two {
     height: 600px;
-  }
-
-  .page-container {
-    margin: 0px 20px;
   }
 }
 </style>

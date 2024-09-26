@@ -2,6 +2,7 @@
 import { ref, onMounted } from 'vue'
 import ResponsiveImage from '@/components/ResponsiveImage.vue'
 import SkillModal from '@/components/mySkills/SkillModal.vue'
+import { importImage } from '@/utils/imageLoader'
 
 const props = defineProps({
   /* 
@@ -58,29 +59,12 @@ const updateModalPosition = (event: MouseEvent) => {
   const rect = (event.currentTarget as HTMLElement).getBoundingClientRect()
   const availableSpaceBelow = window.innerHeight - rect.bottom
 
-  if (availableSpaceBelow < 400) {
+  if (availableSpaceBelow < 500) {
     modalPosition.value = 'above'
   } else {
     modalPosition.value = 'below'
   }
   handleHoverAndClick(event)
-}
-
-async function importImage(imageName: string, size: string) {
-  const imagesContext: Record<string, () => Promise<any>> = import.meta.glob(
-    '../../assets/images/**/*.webp'
-  )
-  const imagePath = `../../assets/images/${imageName}_${size}.webp`
-
-  if (imagesContext[imagePath]) {
-    const module = await imagesContext[imagePath]()
-
-    if (typeof module === 'function') {
-      return (await module()).default
-    } else {
-      return module.default
-    }
-  }
 }
 
 async function loadImages() {

@@ -28,6 +28,7 @@ button {
   padding: 32px 72px;
   font-size: var(--normal-font-size);
   font-weight: 300;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   transition:
     transform 0.2s,
     background-color 0.2s;

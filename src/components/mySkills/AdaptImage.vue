@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { onMounted, ref } from 'vue'
 import ResponsiveImage from '../ResponsiveImage.vue'
+import { importImage } from '@/utils/imageLoader'
 
 const props = defineProps({
   /* 
@@ -30,22 +31,6 @@ const smallFirstImage = ref('')
 const mediumFirstImage = ref('')
 const smallSecondImage = ref('')
 const mediumSecondImage = ref('')
-
-async function importImage(imageName: string, size: string) {
-  const imagesContext: Record<string, () => Promise<any>> = import.meta.glob(
-    '../../assets/images/**/*.webp'
-  )
-  const imagePath = `../../assets/images/${imageName}_${size}.webp`
-
-  if (imagesContext[imagePath]) {
-    const module = await imagesContext[imagePath]()
-
-    return module.default || ''
-  } else {
-    console.error(`Image not found: ${imagePath}`)
-    return ''
-  }
-}
 
 async function loadImages() {
   smallFirstImage.value = await importImage(props.firstImage, 'small')

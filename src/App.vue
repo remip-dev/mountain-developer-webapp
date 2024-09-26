@@ -36,8 +36,14 @@ import SimpleFooter from './components/SimpleFooter.vue'
 }
 
 .main-content-container {
-  margin-top: 15vh;
+  margin: 15vh 9vw 0;
   z-index: 0;
+}
+
+@media (max-width: 1220px) {
+  .main-content-container {
+    margin: 15vh 70px 0;
+  }
 }
 
 @media (max-width: 1000px) {
@@ -47,10 +53,20 @@ import SimpleFooter from './components/SimpleFooter.vue'
   }
 }
 
+@media (max-width: 780px) {
+  .main-content-container {
+    margin: 15vh 30px 0;
+  }
+}
+
 @media (max-width: 600px) {
   .header-container {
     /* to adapt with the body padding */
     padding: 20px 10px 0 10px;
+  }
+
+  .main-content-container {
+    margin: 15vh 20px 0;
   }
 }
 </style>

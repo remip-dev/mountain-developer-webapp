@@ -13,20 +13,17 @@ let mountainImage: any
 let skillsImage: any
 let modal: any
 
-beforeEach(async () => {
-  vi.mock('import.meta', () => ({
-    glob: () => ({
-      '@/assets/images/mySkills/devops/mountain_devops_small.webp': () =>
-        Promise.resolve({ default: smallImg1 }),
-      '@/assets/images/mySkills/devops/devops_small.webp': () =>
-        Promise.resolve({ default: smallImg2 }),
-      '@/assets/images/mySkills/devops/mountain_devops_medium.webp': () =>
-        Promise.resolve({ default: mediumImg1 }),
-      '@/assets/images/mySkills/devops/devops_medium.webp': () =>
-        Promise.resolve({ default: mediumImg2 })
-    })
-  }))
+vi.mock('@/utils/imageLoader', () => ({
+  importImage: vi.fn((imageName, size) => {
+    if (imageName === 'mySkills/devops/mountain_devops') {
+      return size === 'small' ? smallImg1 : mediumImg1
+    } else if (imageName === 'mySkills/devops/devops') {
+      return size === 'small' ? smallImg2 : mediumImg2
+    }
+  })
+}))
 
+beforeEach(async () => {
   wrapper = mount(SkillGroup, {
     props: {
       mountainImage: 'mySkills/devops/mountain_devops',

@@ -8,20 +8,17 @@ import mediumMountainer from '@/assets/images/mySkills/mountainer/mountainer_med
 
 let wrapper: any
 
-beforeEach(async () => {
-  vi.mock('import.meta', () => ({
-    glob: () => ({
-      '@/assets/images/mySkills/worker/worker_small.webp': () =>
-        Promise.resolve({ default: smallWorker }),
-      '@/assets/images/mySkills/worker/worker_medium.webp': () =>
-        Promise.resolve({ default: mediumWorker }),
-      '@/assets/images/mySkills/mountainer/mountainer_small.webp': () =>
-        Promise.resolve({ default: smallMountainer }),
-      '@/assets/images/mySkills/mountainer/mountainer_medium.webp': () =>
-        Promise.resolve({ default: mediumMountainer })
-    })
-  }))
+vi.mock('@/utils/imageLoader', () => ({
+  importImage: vi.fn((imageName, size) => {
+    if (imageName === 'mySkills/worker/worker') {
+      return size === 'small' ? smallWorker : mediumWorker
+    } else if (imageName === 'mySkills/mountainer/mountainer') {
+      return size === 'small' ? smallMountainer : mediumMountainer
+    }
+  })
+}))
 
+beforeEach(async () => {
   wrapper = mount(AdaptImage, {
     props: {
       firstImage: 'mySkills/worker/worker',
