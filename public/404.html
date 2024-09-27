@@ -6,8 +6,8 @@
   </head>
   <body>
     <script type="text/javascript">
-      var redirectTo = window.location.pathname
-      window.location.href = '/' + redirectTo
+      var pathname = window.location.pathname
+      window.location.href = '/' + pathname.substring(1)
     </script>
   </body>
 </html>
