@@ -46,42 +46,56 @@
         />
       </div>
     </div>
+    <div class="section-three">
+      <MySkills />
+    </div>
+    <div class="section-button">
+      <SimpleButton @clicked="handleClickButton" text="PRENEZ CONTACT !" />
+    </div>
   </div>
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue'
 import ResponsiveImage from '@/components/ResponsiveImage.vue'
-import smallFollowMe from '@/assets/images/follow-me/follow_me_small.webp'
-import mediumFollowMe from '@/assets/images/follow-me/follow_me_medium.webp'
-import largeFollowMe from '@/assets/images/follow-me/follow_me_large.webp'
-import smallDrawing from '@/assets/images/map_drawing/map_drawing_small.webp'
-import mediumDrawing from '@/assets/images/map_drawing/map_drawing_medium.webp'
-import largeDrawing from '@/assets/images/map_drawing/map_drawing_large.webp'
+import smallFollowMe from '@/assets/images/followMe/follow_me_small.webp'
+import mediumFollowMe from '@/assets/images/followMe/follow_me_medium.webp'
+import largeFollowMe from '@/assets/images/followMe/follow_me_large.webp'
+import smallDrawing from '@/assets/images/mapDrawing/map_drawing_small.webp'
+import mediumDrawing from '@/assets/images/mapDrawing/map_drawing_medium.webp'
+import largeDrawing from '@/assets/images/mapDrawing/map_drawing_large.webp'
+import MySkills from '@/components/mySkills/MySkills.vue'
+import SimpleButton from '@/components/SimpleButton.vue'
+import { useRouter } from 'vue-router'
 
 export default defineComponent({
   name: 'HomeView',
   components: {
-    ResponsiveImage
+    ResponsiveImage,
+    MySkills,
+    SimpleButton
   },
   setup() {
+    const router = useRouter()
+
+    function handleClickButton() {
+      router.push({ name: 'contact' })
+    }
+
     return {
       smallFollowMe,
       mediumFollowMe,
       largeFollowMe,
       smallDrawing,
       mediumDrawing,
-      largeDrawing
+      largeDrawing,
+      handleClickButton
     }
   }
 })
 </script>
 
 <style scoped>
-.page-container {
-  margin: 0px 9vw;
-}
-
 .section-container {
   display: flex;
   flex-direction: row;
@@ -93,6 +107,17 @@ export default defineComponent({
 
 .section-two {
   height: 700px;
+}
+
+.section-three {
+  margin: 100px 0px;
+}
+
+.section-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 30px 0px;
 }
 
 .fm-image-container,
@@ -143,10 +168,6 @@ span {
 }
 
 @media (max-width: 1220px) {
-  .page-container {
-    margin: 0px 70px;
-  }
-
   .section-one {
     height: 450px;
   }
@@ -157,10 +178,6 @@ span {
 }
 
 @media (max-width: 1000px) {
-  .page-container {
-    margin: 0px 80px;
-  }
-
   .section-one {
     height: 650px;
     flex-direction: column;
@@ -183,12 +200,6 @@ span {
   }
 }
 
-@media (max-width: 780px) {
-  .page-container {
-    margin: 0px 30px;
-  }
-}
-
 @media (max-width: 600px) {
   .text-container h2 {
     font-size: var(--tablet-normal-font-size);
@@ -200,10 +211,6 @@ span {
 
   .section-two {
     height: 600px;
-  }
-
-  .page-container {
-    margin: 0px 20px;
   }
 }
 </style>

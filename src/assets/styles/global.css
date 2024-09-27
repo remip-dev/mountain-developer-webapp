@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
 
 :root {
   --primary-color: #fffbf6;
@@ -21,6 +21,7 @@ body {
   font-weight: 300;
   background-color: var(--primary-color);
   color: var(--tertiary-color);
+  overflow-x: hidden;
 }
 
 h1 {
@@ -33,7 +34,8 @@ h2 {
   font-weight: 700;
 }
 
-p {
+p,
+ul {
   font-size: var(--normal-font-size);
   font-weight: 300;
   text-align: justify;
@@ -48,7 +50,8 @@ p {
     font-size: var(--tablet-h2-font-size);
   }
 
-  p {
+  p,
+  ul {
     font-size: var(--tablet-normal-font-size);
   }
 }
