@@ -58,6 +58,15 @@ ul {
 
 @media (max-width: 600px) {
   h1 {
-    font-size: var(--tablet-h2-font-size);
+    font-size: var(--h1-font-size);
+  }
+
+  h2 {
+    font-size: var(--h2-font-size);
+  }
+
+  p,
+  ul {
+    font-size: var(--normal-font-size);
   }
 }
