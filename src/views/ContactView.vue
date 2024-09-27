@@ -30,7 +30,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 50px 100px;
 }
 
 a {
@@ -49,7 +48,8 @@ h2 {
 
 .place {
   letter-spacing: 5px;
-  width: 400px;
+  max-width: 400px;
+  width: 100%;
   text-align: center;
 }
 
