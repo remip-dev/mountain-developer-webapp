@@ -79,6 +79,7 @@ onMounted(() => {
   align-items: start;
   flex-wrap: wrap;
   min-height: 500px;
+  width: 100%;
 }
 
 .orange {
@@ -107,7 +108,7 @@ onMounted(() => {
 .left-container,
 .right-container {
   margin: 50px 0;
-  width: 450px;
+  width: 550px;
 }
 
 .number {
@@ -133,5 +134,58 @@ onMounted(() => {
 
 :deep(.citation) {
   font-weight: 700;
+  font-style: italic;
+}
+
+@media (max-width: 1220px) {
+  .left-container,
+  .right-container {
+    width: 450px;
+  }
+
+  .image {
+    top: 130px;
+    left: -40px;
+    width: 400px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .left-container,
+  .right-container {
+    width: 650px;
+  }
+
+  .image {
+    top: 10px;
+    left: -20px;
+    width: 370px;
+  }
+}
+
+@media (max-width: 780px) {
+  .left-container,
+  .right-container {
+    width: 500px;
+  }
+
+  .image {
+    top: 70px;
+    left: -20px;
+    width: 320px;
+  }
+}
+
+@media (max-width: 600px) {
+  .left-container,
+  .right-container {
+    width: 380px;
+  }
+
+  .image {
+    top: 100px;
+    left: 0px;
+    width: 290px;
+  }
 }
 </style>

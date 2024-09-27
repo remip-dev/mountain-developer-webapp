@@ -1,7 +1,7 @@
 <script setup lang="ts"></script>
 
 <template>
-  <div>
+  <div class="footer-container">
     <span>Copyright ©Rémi Policet</span>
     <span>|</span>
     <router-link class="link" to="/legal-information">Mentions légales</router-link>
@@ -13,8 +13,13 @@
 <style scoped>
 div {
   display: flex;
-  flex-direction: row-reverse;
+  flex-direction: row;
+  justify-content: end;
   margin-top: 50px;
+}
+
+.no-body-padding {
+  margin-right: 30px;
 }
 
 .link {
@@ -26,9 +31,18 @@ span,
   margin: 0px 5px;
 }
 
+@media (max-width: 1000px) {
+  .no-body-padding {
+    margin-right: 20px;
+  }
+}
+
 @media (max-width: 600px) {
   span {
     margin: 0px 2px;
+  }
+  .no-body-padding {
+    margin-right: 10px;
   }
 }
 </style>

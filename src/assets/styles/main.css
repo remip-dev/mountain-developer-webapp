@@ -3,14 +3,24 @@ body {
   margin: 0;
 }
 
+.no-lateral-padding {
+  padding: 30px 0px;
+}
+
 @media (max-width: 1000px) {
   body {
     padding: 20px;
+  }
+  .no-lateral-padding {
+    padding: 20px 0px;
   }
 }
 
 @media (max-width: 600px) {
   body {
     padding: 20px 10px;
+  }
+  .no-lateral-padding {
+    padding: 20px 0px;
   }
 }
