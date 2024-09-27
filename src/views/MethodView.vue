@@ -203,4 +203,10 @@ h1 {
     padding: 50px 0;
   }
 }
+
+@media (max-width: 600px) {
+  .intro-container h1 {
+    margin: 30px 0;
+  }
+}
 </style>

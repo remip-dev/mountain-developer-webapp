@@ -17,4 +17,10 @@ export default defineComponent({
   color: var(--tertiary-color);
   letter-spacing: 10px;
 }
+
+@media (max-width: 600px) {
+  .site-name {
+    font-size: var(--tablet-h2-font-size);
+  }
+}
 </style>

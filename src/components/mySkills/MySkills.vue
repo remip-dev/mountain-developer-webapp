@@ -295,7 +295,9 @@ function handleEventSkill() {
   }
 
   .worker {
-    right: 70%;
+    right: 75%;
+    max-width: 120px;
+    top: 37%;
   }
 }
 </style>
