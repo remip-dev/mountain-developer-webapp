@@ -179,13 +179,20 @@ onMounted(() => {
 @media (max-width: 600px) {
   .left-container,
   .right-container {
-    width: 380px;
+    width: 420px;
   }
 
   .image {
     top: 100px;
     left: 0px;
     width: 290px;
+  }
+}
+
+@media (max-width: 500px) {
+  .left-container,
+  .right-container {
+    width: 340px;
   }
 }
 </style>

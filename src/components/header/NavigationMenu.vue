@@ -68,9 +68,7 @@ export default defineComponent({
     display: flex;
     border: none;
     background-color: transparent;
-    position: absolute;
-    top: 20px;
-    right: 20px;
+
     z-index: 2000;
   }
 
@@ -99,6 +97,12 @@ export default defineComponent({
 
   .nav-links a {
     font-size: var(--tablet-h1-font-size);
+  }
+}
+
+@media (max-width: 600px) {
+  .icon-menu {
+    width: 34px;
   }
 }
 </style>
