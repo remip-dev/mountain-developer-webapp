@@ -67,7 +67,7 @@ onBeforeUnmount(() => {
         </p>
         <p>
           À la fin de cette première étape, nous aurons une <strong>vision claire et partagée</strong> du projet, des objectifs à 
-          atteindre, et des contraintes à respecter. J’aurais <strong>en ma possession tout le nécessaire</strong> pour pouvoir vous 
+          atteindre, et des contraintes à respecter. J’aurai <strong>en ma possession tout le nécessaire</strong> pour pouvoir vous 
           proposer un cadrage de projet réfléchi en profondeur.
         </p>'
         :color="Color.White"
