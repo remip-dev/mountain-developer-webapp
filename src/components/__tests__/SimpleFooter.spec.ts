@@ -5,7 +5,10 @@ import { createRouter, createWebHistory } from 'vue-router'
 
 const router = createRouter({
   history: createWebHistory(),
-  routes: [{ path: '/legal-information', component: { template: '<div>Legal Information</div>' } }]
+  routes: [
+    { path: '/', component: { template: '<div>hello</div>' } },
+    { path: '/legal-information', component: { template: '<div>Legal Information</div>' } }
+  ]
 })
 
 describe('SimpleFooter.vue', () => {
