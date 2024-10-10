@@ -22,7 +22,7 @@ function handleEventSkill() {
         skillsImage="mySkills/backend/backend"
         title="Compétences Backend"
         description="<p>Je suis équipé de tous les outils nécessaires pour <span>développer</span> 
-        et <span>déployer</span> une <span>API</span> robuste, testée et documentée dans un environnement 
+        et <span>déployer</span> un <span>backend</span> et une <span>API</span> robuste, testée et documentée dans un environnement 
         <span>JavaScript</span>.</p>"
       />
       <SkillGroup
@@ -57,7 +57,7 @@ function handleEventSkill() {
         mountainImage="mySkills/frontend/mountain_frontend"
         skillsImage="mySkills/frontend/frontend"
         title="Compétences Frontend"
-        description="<p>Bien que spécialiste backend, je sais aussi immortaliser les <span>plus beaux 
+        description="<p>Je sais aussi immortaliser les <span>plus beaux 
         points de vue</span>.</p>
         <p>Je suis capable de réaliser des <span>maquettes</span> d’interfaces utilisateurs <span>agréables</span> et 
         <span>intuitives</span> puis je sais les développer grâce à des <span>frameworks</span> JavaScript <span>modernes</span>.</p>"
