@@ -20,20 +20,22 @@
     </div>
     <div class="section-container section-two">
       <div class="text-container speciality-txt">
-        <h2>Spécialiste des API REST en Node.js et TypeScript</h2>
+        <h2>Développeur Full Stack, créateur de solutions web sur mesure</h2>
         <p>
-          Vous avez <span>besoin de développer une API</span> pour votre application ? Je suis
-          l'homme qu'il vous faut !
+          Vous souhaitez concevoir une <span>solution digitale complète</span> ? Que ce soit un
+          simple <span>site vitrine</span> ou une <span>application plus complexe</span>, je suis là
+          pour vous accompagner <span>de A à Z</span>.
         </p>
         <p>
-          Le développement <span>backend</span> est ma spécialité. Je peux vous concevoir une base
-          de données <span>normalisée et structurée</span> combinée à une API
-          <span>robuste et évolutive</span> pour interagir facilement avec le reste de votre
-          application.
+          Spécialisé en développement web, je maîtrise
+          <span>l’ensemble des aspects techniques</span>, du frontend au backend, avec une expertise
+          en Node.js, TypeScript et API REST. Je vous propose des solutions <span>robustes</span>,
+          <span>maintenables</span> et <span>évolutives</span>, tout en assurant la gestion et le
+          déploiement de votre projet
         </p>
         <p>
-          Mais je n'en reste pas moins capable de relever <span>d'autres défis</span> grâce à mes
-          <span>compétences full stack.</span>
+          Avec moi, vous avez un <span>interlocuteur unique</span> pour une solution web clé en
+          main.
         </p>
       </div>
       <div class="md-image-container">
