@@ -16,3 +16,19 @@ const reducedAtThreeImagesMax = props.images.slice(0, 3)
     <img v-for="(image, index) in reducedAtThreeImagesMax" :key="index" :src="image" />
   </div>
 </template>
+
+<style scoped>
+div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+img {
+  width: 130px;
+  height: 80px;
+  object-fit: cover;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+</style>
