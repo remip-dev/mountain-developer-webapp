@@ -1,7 +1,15 @@
+<script setup lang="ts">
+import RatingScale from '@/components/projects/RatingScale.vue'
+import CompetenceBadge from '@/components/projects/CompetenceBadge.vue'
+
+const mark = 4
+</script>
+
 <template>
   <div>
     <h1>Page en construction</h1>
-    <img src="@/assets/icons/building.svg" />
+    <RatingScale :mark="4" />
+    <CompetenceBadge label="Web-App" />
   </div>
 </template>
 
