@@ -4,6 +4,10 @@
   --primary-color: #fffbf6;
   --secondary-color: #ffeacb;
   --tertiary-color: #ff9d2a;
+  --hover-color: #fff3e2;
+  --hover-dark-color: #ad6315;
+  --hover-button-color: #ad6315;
+  --swiper-navigation-color: var(--tertiary-color);
   --black: #000000;
   --white: #ffffff;
 

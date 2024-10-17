@@ -24,6 +24,11 @@ div {
 
 .link {
   color: var(--tertiary-color);
+  transition: color 0.3s ease;
+}
+
+.link:hover {
+  color: var(--hover-dark-color);
 }
 
 span,

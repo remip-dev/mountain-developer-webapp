@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import MountainMarkIcon from './MountainMarkIcon.vue'
-import { defineProps } from 'vue'
 
 defineProps({
   mark: {
@@ -28,5 +27,16 @@ div {
 
 .colored :deep(path) {
   fill: var(--tertiary-color);
+}
+
+@media (max-width: 600px) {
+  .mountain {
+    width: 32px;
+    height: 24px;
+  }
+
+  div {
+    gap: 8px;
+  }
 }
 </style>

@@ -118,6 +118,10 @@ onMounted(() => {
 </template>
 
 <style scoped>
+.trigger-div {
+  cursor: pointer;
+}
+
 .mountain-image,
 .skills-image {
   position: absolute;

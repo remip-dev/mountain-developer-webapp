@@ -65,4 +65,48 @@ img {
   width: 387px;
   z-index: 1;
 }
+
+@media (max-width: 600px) {
+  .container,
+  img,
+  .title {
+    width: 300px;
+  }
+
+  .title {
+    height: 48px;
+    top: 30px;
+  }
+
+  .category {
+    width: 147px;
+    height: 29px;
+  }
+
+  .container {
+    height: 78px;
+  }
+}
+
+@media (max-width: 400px) {
+  .container,
+  img,
+  .title {
+    width: 260px;
+  }
+
+  .title {
+    height: 42px;
+    top: 26px;
+  }
+
+  .category {
+    width: 127px;
+    height: 25px;
+  }
+
+  .container {
+    height: 68px;
+  }
+}
 </style>

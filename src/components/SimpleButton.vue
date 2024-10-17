@@ -29,14 +29,17 @@ button {
   font-size: var(--normal-font-size);
   font-weight: 300;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-  transition:
-    transform 0.2s,
-    background-color 0.2s;
+  transition: transform 0.2s;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: var(--hover-dark-color);
 }
 
 button:active {
   transform: scale(0.95);
-  background-color: rgba(255, 157, 42, 0.4);
 }
 
 @media (max-width: 780px) {
