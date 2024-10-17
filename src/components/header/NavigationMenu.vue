@@ -51,6 +51,11 @@ export default defineComponent({
   color: var(--tertiary-color);
   font-size: var(--normal-font-size);
   text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: var(--hover-dark-color);
 }
 
 .active {

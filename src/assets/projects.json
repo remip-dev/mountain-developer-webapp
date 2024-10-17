@@ -1,0 +1,72 @@
+[
+  {
+    "title": "ELIoT",
+    "category": "SaaS",
+    "year": 2024,
+    "images": ["https://urlr.me/X83vK", "https://urlr.me/Fs9RT"],
+    "mark": 5,
+    "description": "Le projet ELIoT, développé au sein de la DIN Grenoble chez ALTEN, vise à répondre aux enjeux environnementaux liés aux systèmes d'objets connectés (IoT). ELIoT est une plateforme web permettant de mesurer et analyser l'empreinte carbone des systèmes IoT sur l'ensemble de leur cycle de vie, en intégrant des sondes matérielles et logicielles pour la surveillance en temps réel de la consommation énergétique. Mon rôle a consisté à développer le frontend et le backend de la plateforme en utilisant Vue.js et Node.js. J'ai travaillé sur l'intégration des maquettes, l'optimisation de la communication avec les APIs backend, ainsi que sur la mise en place des bonnes pratiques de développement (TDD, CI/CD). En collaboration avec l'équipe, nous avons également conçu une courbe carbone en temps réel pour visualiser l'impact environnemental des objets connectés.",
+    "competences": [
+      "Vue.js",
+      "Node.js",
+      "TypeScript",
+      "DevOps",
+      "OAuth 2.0",
+      "Docker",
+      "CI/CD",
+      "TDD",
+      "Dev Backend",
+      "Dev Frontend"
+    ]
+  },
+  {
+    "title": "Intégration API",
+    "category": "Plugin WordPress",
+    "year": 2024,
+    "images": ["https://urlr.me/vyf1n", "https://urlr.me/wkfQp"],
+    "mark": 5,
+    "description": "Japanime Universe propose une large gamme de figurine manga sur son site e-commerce. L'équipe Japanime a fait appel à mes services dans le but d'intégrer le catalogue de leur fournisseur automatiquement à leur catalogue. Grâce à mon travail, les porduits fournisseurs disponibles sont maintenant automatiquement ajoutés à leur site et les commandes directement transmises au fournisseur.",
+    "competences": ["WordPress", "PHP", "API", "Plugin WordPress"]
+  },
+  {
+    "title": "LaboVersité",
+    "category": "Web-App",
+    "year": 2023,
+    "images": ["https://urlr.me/sCvLd", "https://urlr.me/LZcdf", "https://urlr.me/y6wd2"],
+    "mark": 5,
+    "description": "JAYA est une startup qui cherche à sensibiliser le grand public à la biodiversité en partenariat avec des jardineries. Pour atteindre cet objectif, JAYA a développé une borne interactive équipée d'une tablette, accueillant une application capable de recueillir les pratiques de jardinage des utilisateurs et de fournir des conseils personnalisés pour encourager des comportements respectueux de la nature. Ma mission a été de développer le frontend de cette web app en utilisant React, en collaboration avec l'équipe backend de JAYA. Le projet visait à offrir une interface intuitive et accessible permettant de guider les utilisateurs à travers un questionnaire adapté à leurs besoins et de générer des conseils personnalisés, disponibles via QR code ou e-mail.",
+    "competences": ["React", "UI/UX Design", "Dev Frontend", "Test utilisateurs", "Accessibilité"]
+  },
+  {
+    "title": "Gestionnaire devis/facture",
+    "category": "Outil de gestion",
+    "year": 2022,
+    "images": ["https://urlr.me/Swk5f", "https://urlr.me/R2xjg", "https://urlr.me/21YdN"],
+    "mark": 5,
+    "description": "ByCommute est une entreprise spécialisée dans la conception et la distribution d'abris vélos pour les structures publiques et les entreprises privées. Basée à Grenoble, l'équipe de ByCommute propose des solutions sur mesure pour répondre aux besoins croissants en infrastructures de mobilité durable. Pour simplifier la gestion de ses propositions commerciales, ByCommute avait besoin d’un outil de gestion efficace permettant de créer des devis personnalisés, de les transformer en factures et de suivre facilement l'historique des documents générés pour chaque client.\n\nMa mission a été de concevoir un gestionnaire de devis et factures complet, intégré à leur environnement de travail.\n\nCet outil permet non seulement de créer et d'éditer des devis professionnels au format PDF, mais aussi de les sauvegarder pour itération ultérieure.\n\nGrâce à ce système, ByCommute peut revenir facilement sur les devis pour les ajuster, tout en ayant la possibilité de générer des factures à partir des devis en un seul clic.\n\nCette automatisation simplifie grandement le suivi des projets clients et améliore l’efficacité administrative.",
+    "competences": [
+      "Automation",
+      "JavaScript",
+      "Google Workspace",
+      "HTML/CSS",
+      "Google Apps Script",
+      "PDF Generation"
+    ]
+  },
+  {
+    "title": "Créateur de devis",
+    "category": "Outil de gestion",
+    "year": 2022,
+    "images": ["https://urlr.me/pfTsZ", "https://urlr.me/pNgnZ", "https://urlr.me/6mT35"],
+    "mark": 5,
+    "description": "Zesti est une startup qui veut révolutionner la distribution alimentaire en promouvant la consommation en circuit court.\n\nL'équipe Zesti a besoin quotidiennement de concevoir des devis personnalisés.\n\nMa mission a donc été de leur concevoir un outil capable de s'intégrer à leur espace de travail, de les aider à composer le devis à travers leur immense gamme de produits puis de générer un devis professionnel au format pdf.",
+    "competences": [
+      "Google Workspace",
+      "HTML/CSS",
+      "JavaScript",
+      "Google Apps Script",
+      "Automation",
+      "PDF Generation"
+    ]
+  }
+]
