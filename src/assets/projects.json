@@ -1,5 +1,14 @@
 [
   {
+    "title": "Le Développeur Montagnard",
+    "category": "Portfolio",
+    "year": 2024,
+    "images": ["https://urlr.me/mLYns", "https://urlr.me/LkQWV", "https://urlr.me/ctjY2"],
+    "mark": 5,
+    "description": "Le Développeur Montagnard est mon portfolio personnel. Plongez dans un univers montagneux inspiré de ma passion et découvrez mon offre, mes compétences, ma méthode et bien plus. J'ai conçu ce site avec Vue.js et TypeScript, optimisé pour la performance et la fluidité, avec un design épuré élaboré sur Figma. Grâce à un pipeline CI/CD, le site reste toujours à jour et performant, offrant une navigation intuitive et responsive.",
+    "competences": ["Vue.js", "Figma", "CI/CD", "TypeScript", "Dev Frontend"]
+  },
+  {
     "title": "ELIoT",
     "category": "SaaS",
     "year": 2024,
