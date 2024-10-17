@@ -4,15 +4,21 @@ import RatingScale from './RatingScale.vue'
 import ScreenOverview from './ScreenOverview.vue'
 import MountainIllustration from './MountainIllustration.vue'
 import { type Project } from '@/interfaces/Project'
-import ProjectsView from '@/views/ProjectsView.vue'
+import { useRouter } from 'vue-router'
 
 defineProps<{
   project: Project
 }>()
+
+const router = useRouter()
+
+function handleClick() {
+  router.push({ name: 'detailedProject', params: { name: 'building' } })
+}
 </script>
 
 <template>
-  <div class="main-container">
+  <div class="main-container" @click="handleClick">
     <div class="left-container">
       <MountainIllustration
         :year="project.year"
