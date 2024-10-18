@@ -215,4 +215,10 @@ span {
     height: 600px;
   }
 }
+
+@media (max-width: 400px) {
+  .section-two {
+    height: 700px;
+  }
+}
 </style>
