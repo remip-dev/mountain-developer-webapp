@@ -61,4 +61,4 @@ Ce projet est un portfolio personnel et n’accepte pas les contributions extern
 
 Rémi Policet - **Développeur Full Stack TypeScript**
 
-Si vous souhaitez collaborer ou en savoir plus sur mon approche de développement, vous pouvez me contacter via [LinkedIn](https://www.linkedin.com/in/remi-policet) ou mon [mail](contact@remipolicet.com).
+Si vous souhaitez collaborer ou en savoir plus sur mon approche de développement, vous pouvez me contacter via [LinkedIn](https://www.linkedin.com/in/remi-policet) ou par [email](mailto:contact@remipolicet.com).
