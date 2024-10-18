@@ -1,45 +1,64 @@
-# mountain-developer-webapp
+# Portfolio - Rémi Policet | Développeur Full Stack TypeScript
 
-This template should help get you started developing with Vue 3 in Vite.
+Bienvenue sur le repository de mon site portfolio personnel, conçu pour présenter mes compétences et projets en tant que développeur full stack TypeScript, avec un branding centré sur la montagne. Ce portfolio vise à montrer la valeur que je peux apporter aux clients, tout en reflétant mon approche de développement orientée sur le clean code et la maintenabilité.
 
-## Recommended IDE Setup
+## Technologies utilisées
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+Ce portfolio est développé avec les technologies suivantes :
 
-## Type Support for `.vue` Imports in TS
+- **Vue.js 3** : framework JavaScript pour le développement d'interfaces utilisateur réactives.
+- **TypeScript** : surcouche de JavaScript pour assurer une meilleure maintenabilité et robustesse du code.
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
+## Structure du projet
 
-## Customize configuration
+Voici la structure principale du projet :
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
-
-## Project Setup
-
-```sh
-npm install
+```
+src/
+│
+├── assets/                # Contient les ressources (images, icônes, etc.)
+├── components/            # Contient les composants Vue.js réutilisables
+│   ├── __tests__/         # Tests unitaires des composants
+│   ├── header/            # Composants relatifs à l'en-tête du site
+│   ├── mySkills/          # Composants relatifs à la section "Mes compétences"
+│   ├── projects/          # Composants relatifs à la section "Mes projets"
+│   │   ├── ResponsiveImage.vue
+│   │   ├── SimpleButton.vue
+│   │   ├── SimpleFooter.vue
+│   │   └── StepMethod.vue  # Composant décrivant ma méthode de travail
+│
+├── enum/                  # Définitions d'énumérations TypeScript
+├── interfaces/            # Interfaces TypeScript pour typage strict
+├── router/                # Configuration du routeur Vue.js
+├── stores/                # Gestion des états globaux avec Pinia (ou Vuex)
+├── utils/                 # Fonctions utilitaires
+├── views/                 # Pages du site
+├── App.vue                # Composant racine Vue.js
+└── main.ts                # Point d'entrée principal de l'application
 ```
 
-### Compile and Hot-Reload for Development
+## CI/CD
 
-```sh
-npm run dev
-```
+Le site est automatiquement déployé via **GitHub Actions** sur **GitHub Pages** après chaque modification sur la branche principale. Voici un aperçu des deux workflows utilisés :
 
-### Type-Check, Compile and Minify for Production
+- **Build Workflow** : assure que chaque push est testé et construit correctement avant tout déploiement.
+- **Deploy Workflow** : déploie automatiquement le site sur GitHub Pages si les tests et la construction réussissent.
 
-```sh
-npm run build
-```
+Ci-dessous, les deux fichiers workflows utilisés :
 
-### Run Unit Tests with [Vitest](https://vitest.dev/)
+- [`pipeline-build.yml`](./.github/pipeline-build.yml) : Configuration pour la construction du projet.
+- [`pipeline-deploy.yml`](./.github/pipeline-deploy.yml) : Configuration pour le déploiement du site.
 
-```sh
-npm run test:unit
-```
+## Hébergement
 
-### Lint with [ESLint](https://eslint.org/)
+Le site est hébergé directement sur **GitHub Pages**, avec une publication automatique grâce à l'intégration de GitHub Actions. Vous pouvez visiter le site live à l’adresse suivante : [https://remipolicet.com](https://remipolicet.com).
 
-```sh
-npm run lint
-```
+## Contributions
+
+Ce projet est un portfolio personnel et n’accepte pas les contributions externes.
+
+## Auteur
+
+Rémi Policet - **Développeur Full Stack TypeScript**
+
+Si vous souhaitez collaborer ou en savoir plus sur mon approche de développement, vous pouvez me contacter via [LinkedIn](https://www.linkedin.com/in/remi-policet) ou mon [mail](contact@remipolicet.com).
