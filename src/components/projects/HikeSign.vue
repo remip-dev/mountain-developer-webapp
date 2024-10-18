@@ -83,6 +83,10 @@ img {
     height: 29px;
   }
 
+  .category p {
+    font-size: 15px;
+  }
+
   .container {
     height: 78px;
   }
@@ -107,6 +111,10 @@ img {
 
   .container {
     height: 68px;
+  }
+
+  .category p {
+    font-size: 12px;
   }
 }
 </style>
