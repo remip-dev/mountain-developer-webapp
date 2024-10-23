@@ -1,24 +1,50 @@
+<script setup lang="ts">
+import SimpleButton from '@/components/SimpleButton.vue'
+</script>
+
 <template>
-  <h1>
-    Les pages projets sont en développement, n'hésite pas à
-    <router-link to="/contact" class="contact-link">me contacter</router-link> si tu as besoin
-    d'informations
-  </h1>
+  <div class="main-container">
+    <div class="project-container">
+      <div class="left-column"></div>
+      <div class="right-column"></div>
+    </div>
+    <div class="button-container">
+      <SimpleButton text="PRÉCÉDENT" />
+      <SimpleButton text="SUIVANT" />
+    </div>
+  </div>
 </template>
 
 <style scoped>
-h1 {
-  font-weight: 300;
+.project-container {
+  display: flex;
+  flex-direction: row;
 }
 
-.contact-link {
-  color: var(--tertiary-color);
-  text-decoration: none;
-  font-weight: 700;
-  transition: color 0.3s ease;
+.left-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
 }
 
-.contact-link:hover {
-  color: var(--hover-dark-color);
+.right-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+@media (max-width: 1000px) {
+  .project-container {
+    flex-direction: column-reverse;
+  }
 }
 </style>
