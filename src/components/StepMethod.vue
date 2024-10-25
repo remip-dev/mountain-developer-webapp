@@ -136,6 +136,16 @@ onMounted(() => {
 :deep(.citation) {
   font-weight: 700;
   font-style: italic;
+  color: var(--tertiary-color);
+}
+
+:deep(span) {
+  font-weight: 700;
+  color: var(--tertiary-color);
+}
+
+.beige :deep(span) {
+  color: var(--primary-color);
 }
 
 @media (max-width: 1220px) {

@@ -11,7 +11,7 @@ defineProps<{
     <div class="client-container">
       <img src="@/assets/icons/client.svg" />
       <p>{{ feedback.name }}</p>
-      <p>{{ feedback.client }}</p>
+      <p class="bold">{{ feedback.client }}</p>
     </div>
     <div class="rating-container">
       <RatingScale class="scale" :mark="feedback.rating" />
@@ -58,6 +58,10 @@ defineProps<{
 
 .scale {
   gap: 10px;
+}
+
+.bold {
+  font-weight: 700;
 }
 
 @media (max-width: 600px) {
