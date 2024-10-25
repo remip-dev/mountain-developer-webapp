@@ -46,6 +46,10 @@ defineProps({
   font-weight: 700;
 }
 
+p {
+  color: var(--tertiary-color);
+}
+
 .title {
   position: absolute;
   top: 38px;

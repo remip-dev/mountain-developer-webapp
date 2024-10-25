@@ -16,6 +16,7 @@ div {
   flex-direction: row;
   justify-content: end;
   margin-top: 50px;
+  color: var(--tertiary-color);
 }
 
 .no-body-padding {

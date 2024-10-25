@@ -20,7 +20,7 @@ div {
   border-radius: 30px;
   border: solid 2px var(--tertiary-color);
   width: auto;
-  padding: 10px 22px;
+  padding: 5px 20px;
   display: inline-block;
 }
 

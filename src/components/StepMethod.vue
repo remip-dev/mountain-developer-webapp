@@ -86,10 +86,6 @@ onMounted(() => {
   background-color: var(--tertiary-color);
 }
 
-.beige {
-  color: var(--primary-color);
-}
-
 .left-container {
   display: flex;
   flex-direction: column;
@@ -122,6 +118,11 @@ onMounted(() => {
   font-family: 'Love Ya Like A Sister', cursive;
   font-weight: 400;
   font-style: normal;
+  color: var(--tertiary-color);
+}
+
+.beige {
+  color: var(--primary-color);
 }
 
 .image {

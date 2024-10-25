@@ -1,44 +1,76 @@
 <script setup lang="ts">
-import { importImage } from '@/utils/imageLoader'
-import { computed, onMounted, ref } from 'vue'
+import { computed, ref } from 'vue'
 import ResponsiveImage from '../ResponsiveImage.vue'
+import type { Image } from '@/interfaces/Image'
 
 const props = defineProps<{
-  images: string[]
+  images: Image[]
 }>()
 
-const currentImage = ref(props.images[0])
-const smallImage = ref('')
-const mediumImage = ref('')
-const largeImage = ref('')
+const currentIndex = ref(0)
+const currentSmallImage = computed(() => props.images[currentIndex.value].small)
+const currentMediumImage = computed(() => props.images[currentIndex.value].medium)
+const currentLargeImage = computed(() => props.images[currentIndex.value].large)
+const currentAlt = computed(() => props.images[currentIndex.value].alt)
 
-const otherImages = computed(() => {
-  return props.images.filter((image) => image !== currentImage.value)
-})
-
-async function loadMainImage() {
-  smallImage.value = await importImage(currentImage.value, 'small')
-  mediumImage.value = await importImage(currentImage.value, 'medium')
-  largeImage.value = await importImage(currentImage.value, 'large')
+function handleClick(index: number): void {
+  currentIndex.value = index
 }
-
-async function loadOtherImage() {}
-
-onMounted(() => {
-  loadMainImage()
-})
 </script>
 
 <template>
   <div class="container">
     <div class="image-viewer">
       <ResponsiveImage
-        :smallImage="smallImage"
-        :mediumImage="mediumImage"
-        :largeImage="largeImage"
-        alt="image représentant le projet"
+        class="main-image"
+        :smallImage="currentSmallImage"
+        :mediumImage="currentMediumImage"
+        :largeImage="currentLargeImage"
+        :alt="currentAlt"
       />
     </div>
-    <div class="thumbnails-container"></div>
+    <div class="thumbnails-container">
+      <img
+        v-for="(image, index) in images"
+        :key="index"
+        :src="image.small"
+        @click="handleClick(index)"
+      />
+    </div>
   </div>
 </template>
+
+<style scoped>
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.thumbnails-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin: 20px 0 40px;
+}
+
+.image-viewer {
+  width: 100%;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+  max-height: 500px;
+  overflow-y: auto;
+}
+
+.main-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+img {
+  width: 145px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+</style>
