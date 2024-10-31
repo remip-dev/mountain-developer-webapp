@@ -12,13 +12,13 @@ defineProps<{
 
 const router = useRouter()
 
-function handleClick() {
-  router.push({ name: 'detailedProject', params: { name: 'building' } })
+function handleClick(projectName: string) {
+  router.push({ name: 'detailedProject', params: { name: projectName } })
 }
 </script>
 
 <template>
-  <div class="main-container" @click="handleClick">
+  <div class="main-container" @click="handleClick(project.title)">
     <div class="left-container">
       <MountainIllustration
         :year="project.year"

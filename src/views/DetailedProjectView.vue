@@ -1,30 +1,81 @@
 <script setup lang="ts">
 import SimpleButton from '@/components/SimpleButton.vue'
-import project from '@/assets/project.json'
 import CaracteristicBadge from '@/components/projects/CaracteristicBadge.vue'
 import CompetenceBadge from '@/components/projects/CompetenceBadge.vue'
 import FeedbackClient from '@/components/projects/FeedbackClient.vue'
 import ImageViewer from '@/components/projects/ImageViewer.vue'
+import { computed, onMounted, ref, watch } from 'vue'
+import { useProjectStore } from '@/stores/useProjectStore'
+import { useRoute, useRouter } from 'vue-router'
+import { type DetailedProject } from '@/interfaces/DetailedProject'
+import type { Project } from '@/interfaces/Project'
+
+const route = useRoute()
+const router = useRouter()
+const projectStore = useProjectStore()
+
+const projects = ref<Project[]>([])
+const projectName = computed(() => route.params.name as string)
+const detailedProject = ref<DetailedProject | null>(null)
+
+onMounted(async () => {
+  projects.value = await projectStore.getProjects()
+})
+
+watch(
+  projectName,
+  async (newName) => {
+    detailedProject.value = await projectStore.getDetailedProject(newName)
+  },
+  { immediate: true }
+)
+
+async function findProjectIndex(projectName: string): Promise<number> {
+  const index: number = projects.value.findIndex((project) => project.title === projectName)
+  return index
+}
+
+async function findNextProjectName(currentIndex: number): Promise<string> {
+  const nextIndex = (currentIndex + 1) % projects.value.length
+  return projects.value[nextIndex].title
+}
+
+async function findPreviousProjectName(currentIndex: number): Promise<string> {
+  const previousIndex = (currentIndex - 1 + projects.value.length) % projects.value.length
+  return projects.value[previousIndex].title
+}
+
+async function goToNextProject() {
+  const currentIndex = await findProjectIndex(projectName.value)
+  const nextProjectName = await findNextProjectName(currentIndex)
+  router.push({ name: 'detailedProject', params: { name: nextProjectName } })
+}
+
+async function goToPreviousProject() {
+  const currentIndex = await findProjectIndex(projectName.value)
+  const previousProjectName = await findPreviousProjectName(currentIndex)
+  router.push({ name: 'detailedProject', params: { name: previousProjectName } })
+}
 </script>
 
 <template>
-  <div class="main-container">
+  <div v-if="detailedProject" :key="projectName" class="main-container">
     <div class="project-container">
       <div class="left-container">
-        <ImageViewer :images="project.images" />
-        <FeedbackClient :feedback="project.feedback" />
+        <ImageViewer :images="detailedProject.images" />
+        <FeedbackClient :feedback="detailedProject.feedback" />
       </div>
       <div class="right-container">
-        <h2>{{ project.title }}</h2>
+        <h2>{{ detailedProject.title }}</h2>
         <div class="caracteristics-container">
-          <CaracteristicBadge :label="project.category" />
-          <CaracteristicBadge :label="project.year.toString()" />
-          <CaracteristicBadge :label="project.length" />
+          <CaracteristicBadge :label="detailedProject.category" />
+          <CaracteristicBadge :label="detailedProject.year.toString()" />
+          <CaracteristicBadge :label="detailedProject.length" />
         </div>
-        <div v-html="project.description" class="description-container"></div>
+        <div v-html="detailedProject.description" class="description-container"></div>
         <div class="competences-container">
           <CompetenceBadge
-            v-for="(competence, index) in project.competences"
+            v-for="(competence, index) in detailedProject.competences"
             :key="index"
             :label="competence"
           />
@@ -32,8 +83,8 @@ import ImageViewer from '@/components/projects/ImageViewer.vue'
       </div>
     </div>
     <div class="button-container">
-      <SimpleButton class="button" text="PRÉCÉDENT" />
-      <SimpleButton class="button" text="SUIVANT" />
+      <SimpleButton class="button" text="PRÉCÉDENT" @click="goToPreviousProject" />
+      <SimpleButton class="button" text="SUIVANT" @click="goToNextProject" />
     </div>
   </div>
 </template>
