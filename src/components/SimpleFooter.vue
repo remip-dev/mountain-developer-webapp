@@ -15,7 +15,7 @@ div {
   display: flex;
   flex-direction: row;
   justify-content: end;
-  margin-top: 50px;
+  margin-top: 30px;
   color: var(--tertiary-color);
 }
 
@@ -49,6 +49,12 @@ span,
   }
   .no-body-padding {
     margin-right: 10px;
+  }
+}
+
+@media (max-width: 400px) {
+  span {
+    margin: 0px 1px;
   }
 }
 </style>

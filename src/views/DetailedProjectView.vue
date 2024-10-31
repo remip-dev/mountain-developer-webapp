@@ -122,6 +122,7 @@ h2 {
   flex-direction: row;
   justify-content: start;
   gap: 15px;
+  flex-wrap: wrap;
 }
 
 .competences-container {
@@ -137,7 +138,7 @@ h2 {
   justify-content: space-between;
   width: 100%;
   max-width: 1500px;
-  margin: 40px 0 20px;
+  margin: 40px 0 0;
 }
 
 .button {
@@ -145,6 +146,10 @@ h2 {
 }
 
 @media (max-width: 1220px) {
+  .project-container {
+    gap: 60px;
+  }
+
   .button {
     padding: 13px 36px;
   }
@@ -153,6 +158,7 @@ h2 {
 @media (max-width: 1000px) {
   .project-container {
     flex-direction: column-reverse;
+    gap: 40px;
   }
 
   .left-container,
