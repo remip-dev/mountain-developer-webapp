@@ -4,8 +4,8 @@
     "category": "Portfolio",
     "year": 2024,
     "images": ["https://urlr.me/mLYns", "https://urlr.me/LkQWV", "https://urlr.me/ctjY2"],
-    "mark": 5,
-    "description": "Le Développeur Montagnard est mon portfolio personnel. Plongez dans un univers montagneux inspiré de ma passion et découvrez mon offre, mes compétences, ma méthode et bien plus. J'ai conçu ce site avec Vue.js et TypeScript, optimisé pour la performance et la fluidité, avec un design épuré élaboré sur Figma. Grâce à un pipeline CI/CD, le site reste toujours à jour et performant, offrant une navigation intuitive et responsive.",
+    "mark": 4,
+    "description": "<p>Le Développeur Montagnard, c'est mon espace personnel. Plongez dans cet univers inspiré de la montagne et suivez le parcours qui y est raconté : un monde de solutions digitales sans superflu, où chaque détail est pensé pour l'impact, la simplicité, mais toujours avec une touche de créativité et une histoire unique.</p> <p>Entièrement développé avec Vue.js et TypeScript à partir de maquettes épurées sur Figma, ce site, sans CMS surchargé, offre une expérience fluide et responsive. J'ai mis en place un déploiement automatisé via des workflows GitHub Actions, me permettant de l’enrichir et de l’optimiser constamment, au fil de l’aventure du Développeur Montagnard.</p>",
     "competences": ["Vue.js", "Figma", "CI/CD", "TypeScript", "Dev Frontend"]
   },
   {
@@ -14,18 +14,24 @@
     "year": 2024,
     "images": ["https://urlr.me/X83vK", "https://urlr.me/Fs9RT"],
     "mark": 5,
-    "description": "Le projet ELIoT, développé au sein de la DIN Grenoble chez ALTEN, vise à répondre aux enjeux environnementaux liés aux systèmes d'objets connectés (IoT). ELIoT est une plateforme web permettant de mesurer et analyser l'empreinte carbone des systèmes IoT sur l'ensemble de leur cycle de vie, en intégrant des sondes matérielles et logicielles pour la surveillance en temps réel de la consommation énergétique. Mon rôle a consisté à développer le frontend et le backend de la plateforme en utilisant Vue.js et Node.js. J'ai travaillé sur l'intégration des maquettes, l'optimisation de la communication avec les APIs backend, ainsi que sur la mise en place des bonnes pratiques de développement (TDD, CI/CD). En collaboration avec l'équipe, nous avons également conçu une courbe carbone en temps réel pour visualiser l'impact environnemental des objets connectés.",
+    "description": "<p>Le projet ELIoT, développé au sein de la DIN Grenoble chez ALTEN, a pour mission de relever les défis environnementaux posés par l'essor des objets connectés (IoT). Dans un contexte où leur nombre explose, l'impact de ces systèmes sur l'environnement est significatif. ELIoT répond à cette problématique en permettant d'évaluer l'empreinte carbone d’un système IoT sur l’ensemble de son cycle de vie et de son infrastructure.</p> <p>Pour offrir cette analyse, une application web a été créée. Au sein de l'équipe, j’ai contribué à la conception et l'implémentation du modèle de données, développé une API REST en Node.js et TypeScript, et aidé sur le développement du frontend avec Vue.js et TypeScript. J'ai également assuré la maintenance et l'intégration du service d'authentification CAS du laboratoire dans la plateforme ELIoT, ainsi que la mise en place de la CI/CD.</p> <p>Ce projet m’a permis de mettre en œuvre des pratiques de développement avancées telles que le Clean Code, le Domain-Driven Design et le Test-Driven Development. Ces méthodes garantissent non seulement un code maintenable et robuste, mais aussi une meilleure anticipation des évolutions du produit, essentielles pour un SaaS en constante évolution.</p>",
     "competences": [
-      "Vue.js",
-      "Node.js",
+      "Microsoft Azure",
+      "API REST",
       "TypeScript",
+      "TDD",
+      "Node.js",
       "DevOps",
       "OAuth 2.0",
+      "Vue.js",
       "Docker",
       "CI/CD",
-      "TDD",
       "Dev Backend",
-      "Dev Frontend"
+      "Dev Frontend",
+      "DDD",
+      "PostgreSQL",
+      "Express.js",
+      "Swagger"
     ]
   },
   {
@@ -34,7 +40,7 @@
     "year": 2024,
     "images": ["https://urlr.me/vyf1n", "https://urlr.me/wkfQp"],
     "mark": 5,
-    "description": "Japanime Universe propose une large gamme de figurines manga sur son site e-commerce. L'équipe Japanime a fait appel à mes services dans le but d'intégrer le catalogue de leur fournisseur automatiquement à leur catalogue. Grâce à mon travail, les porduits fournisseurs disponibles sont maintenant automatiquement ajoutés à leur site et les commandes directement transmises au fournisseur.",
+    "description": "<p>Japanime Universe propose une vaste collection de figurines manga sur son site e-commerce. L’équipe a fait appel à mes services pour intégrer automatiquement le catalogue de leur fournisseur, afin d’enrichir leur propre catalogue en temps réel. Grâce à cette intégration, les produits disponibles chez le fournisseur sont maintenant ajoutés automatiquement au site, et les commandes client sont directement transmises pour un traitement simplifié.</p> <p>Pour gérer cette intégration de manière flexible, j’ai développé un plugin WordPress personnalisé permettant à l’équipe de sélectionner les licences de produits à importer, de lancer manuellement la synchronisation, et de suivre son état en temps réel. Cette solution sur mesure garantit une synchronisation fluide et un contrôle total sur les produits disponibles, en facilitant l'administration quotidienne de leur catalogue.</p>",
     "competences": ["WordPress", "PHP", "API", "Plugin WordPress"]
   },
   {
@@ -43,8 +49,8 @@
     "year": 2023,
     "images": ["https://urlr.me/sCvLd", "https://urlr.me/LZcdf", "https://urlr.me/y6wd2"],
     "mark": 5,
-    "description": "JAYA est une startup qui cherche à sensibiliser le grand public à la biodiversité en partenariat avec des jardineries. Pour atteindre cet objectif, JAYA a développé une borne interactive équipée d'une tablette, accueillant une application capable de recueillir les pratiques de jardinage des utilisateurs et de fournir des conseils personnalisés pour encourager des comportements respectueux de la nature. Ma mission a été de développer le frontend de cette web app en utilisant React, en collaboration avec l'équipe backend de JAYA. Le projet visait à offrir une interface intuitive et accessible permettant de guider les utilisateurs à travers un questionnaire adapté à leurs besoins et de générer des conseils personnalisés, disponibles via QR code ou e-mail.",
-    "competences": ["React", "UI/UX Design", "Dev Frontend", "Test utilisateurs", "Accessibilité"]
+    "description": "<p>JAYA est une startup engagée pour la cause environnementale et la défense de la biodiversité. Pour encourager des pratiques de jardinage respectueuses de la nature, JAYA a développé une borne interactive en collaboration avec des jardineries, capable de recueillir les pratiques des utilisateurs et de leur fournir des conseils personnalisés : LaboVersité. Ma mission principale consistait à développer le frontend de cette application web en React, en collaboration avec l'équipe backend de JAYA. L'objectif était d'offrir une interface intuitive et accessible, guidant les utilisateurs à travers un questionnaire adapté et générant des recommandations sur mesure, accessibles via QR code ou e-mail.</p> <p>Durant cinq mois, notre équipe de quatre personnes a travaillé en étroite collaboration avec JAYA pour faire avancer ce projet ambitieux. Bien au-delà du simple développement d'une application, notre mission impliquait une étude de marché approfondie, la recherche de jardinerie partenaire et la mise au point d'une offre commerciale solide autour de la borne interactive. Ce projet a ainsi représenté un accompagnement complet dans la stratégie de croissance de JAYA, en intégrant à la fois la technique et la stratégie pour maximiser l'impact de la borne sur la sensibilisation du public.</p>",
+    "competences": ["React.js", "UI/UX Design", "Dev Frontend"]
   },
   {
     "title": "Gestionnaire devis/facture",
@@ -52,13 +58,13 @@
     "year": 2022,
     "images": ["https://urlr.me/Swk5f", "https://urlr.me/R2xjg", "https://urlr.me/21YdN"],
     "mark": 5,
-    "description": "ByCommute est une entreprise spécialisée dans la conception et la distribution d'abris vélos pour les structures publiques et les entreprises privées. Basée à Grenoble, l'équipe de ByCommute propose des solutions sur mesure pour répondre aux besoins croissants en infrastructures de mobilité durable. Pour simplifier la gestion de ses propositions commerciales, ByCommute avait besoin d’un outil de gestion efficace permettant de créer des devis personnalisés, de les transformer en factures et de suivre facilement l'historique des documents générés pour chaque client.\n\nMa mission a été de concevoir un gestionnaire de devis et factures complet, intégré à leur environnement de travail.\n\nCet outil permet non seulement de créer et d'éditer des devis professionnels au format PDF, mais aussi de les sauvegarder pour itération ultérieure.\n\nGrâce à ce système, ByCommute peut revenir facilement sur les devis pour les ajuster, tout en ayant la possibilité de générer des factures à partir des devis en un seul clic.\n\nCette automatisation simplifie grandement le suivi des projets clients et améliore l’efficacité administrative.",
+    "description": "<p>ByCommute, basée à Grenoble, est spécialisée dans la conception et la distribution d’abris vélos et propose des solutions sur mesure pour accompagner la mobilité durable. Face à un besoin de gestion optimisée des propositions commerciales, ByCommute recherchait un outil simple et efficace pour créer des devis personnalisés, les convertir en factures, et suivre l'historique des documents pour chaque client. J’ai donc développé un gestionnaire de devis et factures complet, intégré à leur environnement de travail, permettant de produire des devis professionnels au format PDF et de les sauvegarder pour itération future. </p> <p>Ce système offre à ByCommute une flexibilité précieuse : chaque devis peut être facilement modifié et transformé en facture en un clic, simplifiant ainsi le suivi des projets et les tâches administratives. Cette automatisation améliore non seulement l’efficacité opérationnelle, mais contribue également à renforcer l’expérience client en assurant des échanges rapides et structurés.</p>",
     "competences": [
       "Automation",
       "JavaScript",
+      "Google Apps Script",
       "Google Workspace",
       "HTML/CSS",
-      "Google Apps Script",
       "PDF Generation"
     ]
   },
@@ -68,14 +74,14 @@
     "year": 2022,
     "images": ["https://urlr.me/pfTsZ", "https://urlr.me/pNgnZ", "https://urlr.me/6mT35"],
     "mark": 5,
-    "description": "Zesti est une startup qui veut révolutionner la distribution alimentaire en promouvant la consommation en circuit court.\n\nL'équipe Zesti a besoin quotidiennement de concevoir des devis personnalisés.\n\nMa mission a donc été de leur concevoir un outil capable de s'intégrer à leur espace de travail, de les aider à composer le devis à travers leur immense gamme de produits puis de générer un devis professionnel au format pdf.",
+    "description": "<p>Zesti est une startup qui vise à transformer la distribution alimentaire en favorisant le circuit court, pour reconnecter producteurs locaux et consommateurs. Avec une large gamme de produits à leur disposition, l'équipe de Zesti avait besoin d'un moyen simple et efficace de créer des devis sur mesure au quotidien, tout en garantissant un format professionnel pour leurs clients.</p> <p>Pour répondre à ce besoin, j'ai conçu un outil de gestion des devis entièrement intégré à leur environnement de travail. Ce système permet à l’équipe de sélectionner facilement les produits depuis leur catalogue, d’assembler des devis personnalisés et de générer instantanément des documents PDF au format professionnel. Grâce à cet outil, Zesti peut offrir à ses clients des propositions précises et adaptées tout en simplifiant considérablement le processus administratif de création de devis.</p>",
     "competences": [
+      "PDF Generation",
       "Google Workspace",
       "HTML/CSS",
       "JavaScript",
       "Google Apps Script",
-      "Automation",
-      "PDF Generation"
+      "Automation"
     ]
   }
 ]

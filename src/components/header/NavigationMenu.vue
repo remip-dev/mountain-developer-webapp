@@ -48,18 +48,19 @@ export default defineComponent({
 }
 
 .nav-links a {
-  color: var(--tertiary-color);
+  color: var(--text-color);
   font-size: var(--normal-font-size);
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
 .nav-links a:hover {
-  color: var(--hover-dark-color);
+  color: var(--tertiary-color);
 }
 
 .active {
   font-weight: 900;
+  color: var(--tertiary-color) !important;
 }
 
 @media (max-width: 1220px) {

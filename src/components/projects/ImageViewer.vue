@@ -8,6 +8,8 @@ const props = defineProps<{
 }>()
 
 const currentIndex = ref(0)
+const imageViewerRef = ref<HTMLElement | null>(null)
+
 const currentSmallImage = computed(() => props.images[currentIndex.value].small)
 const currentMediumImage = computed(() => props.images[currentIndex.value].medium)
 const currentLargeImage = computed(() => props.images[currentIndex.value].large)
@@ -15,12 +17,17 @@ const currentAlt = computed(() => props.images[currentIndex.value].alt)
 
 function handleClick(index: number): void {
   currentIndex.value = index
+
+  imageViewerRef.value?.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  })
 }
 </script>
 
 <template>
   <div class="container">
-    <div class="image-viewer">
+    <div class="image-viewer" ref="imageViewerRef">
       <ResponsiveImage
         class="main-image"
         :smallImage="currentSmallImage"
@@ -69,8 +76,10 @@ function handleClick(index: number): void {
   display: block;
 }
 
-img {
+.thumbnails-container img {
   width: 145px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  max-height: 100px;
+  object-fit: cover;
 }
 </style>

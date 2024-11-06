@@ -46,6 +46,7 @@ h2 {
 
 .description :deep(span) {
   font-weight: 700;
+  color: var(--tertiary-color);
 }
 
 @media (max-width: 1220px) {

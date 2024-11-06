@@ -180,7 +180,7 @@ h1 {
 }
 
 .button-container {
-  padding: 150px 0;
+  padding: 20px 0 50px;
 }
 
 .button-section {
@@ -190,18 +190,6 @@ h1 {
   justify-content: center;
   align-items: center;
   width: 100%;
-}
-
-@media (max-width: 1000px) {
-  .button-container {
-    padding: 100px 0;
-  }
-}
-
-@media (max-width: 780px) {
-  .button-container {
-    padding: 50px 0;
-  }
 }
 
 @media (max-width: 600px) {

@@ -13,7 +13,7 @@ defineProps<{
 const router = useRouter()
 
 function handleClick(projectName: string) {
-  router.push({ name: 'detailedProject', params: { name: projectName } })
+  //router.push({ name: 'detailedProject', params: { name: projectName } }) Waiting the recommendations until deploying the access to detailed project page
 }
 </script>
 
@@ -29,9 +29,7 @@ function handleClick(projectName: string) {
     </div>
     <div class="right-container">
       <RatingScale :mark="project.mark" />
-      <div class="description-container">
-        <p>{{ project.description }}</p>
-      </div>
+      <div v-html="project.description" class="description-container"></div>
       <div class="competences-container">
         <CompetenceBadge
           class="competence"
@@ -78,12 +76,12 @@ function handleClick(projectName: string) {
 }
 
 .description-container {
-  height: 160px;
+  height: 161px;
   overflow: hidden;
   margin: 12px 0 0 0;
 }
 
-.description-container p {
+.description-container :deep(p) {
   display: -webkit-box;
   -webkit-line-clamp: 6;
   -webkit-box-orient: vertical;
@@ -104,7 +102,7 @@ function handleClick(projectName: string) {
 }
 
 @media (max-width: 1220px) {
-  .description-container p {
+  .description-container :deep(p) {
     -webkit-line-clamp: 7;
   }
 
@@ -144,10 +142,10 @@ function handleClick(projectName: string) {
   }
 
   .description-container {
-    height: 100px;
+    height: 105px;
   }
 
-  .description-container p {
+  .description-container :deep(p) {
     -webkit-line-clamp: 5;
   }
 }

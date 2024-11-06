@@ -24,6 +24,7 @@ defineProps<{
 .container {
   display: flex;
   flex-direction: row;
+  align-items: center;
   border: solid 2px var(--secondary-color);
   border-radius: 30px;
   padding: 40px;
@@ -39,6 +40,7 @@ defineProps<{
 
 .client-container p {
   margin: 0;
+  text-align: center;
 }
 
 .rating-container {
@@ -62,6 +64,7 @@ defineProps<{
 
 .bold {
   font-weight: 700;
+  color: var(--tertiary-color);
 }
 
 @media (max-width: 600px) {
