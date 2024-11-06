@@ -1,9 +1,9 @@
 <template>
-  <img :src="smallImage" :srcset="srcset" :sizes="sizes" :alt="alt" />
+  <img :src="smallImage" :srcset="computedSrcset" :sizes="computedSizes" :alt="alt" />
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue'
+import { defineComponent, computed } from 'vue'
 
 export default defineComponent({
   name: 'ResponsiveImage',
@@ -24,33 +24,33 @@ export default defineComponent({
     }
   },
   setup(props) {
-    const composeSrcsetAndSizes = () => {
+    const computedSrcset = computed(() => {
       if (props.largeImage && props.mediumImage) {
-        return {
-          srcset: `${props.smallImage} 480w, ${props.mediumImage} 800w, ${props.largeImage} 1200w`,
-          sizes: '(max-width: 600px) 480px, (max-width: 1200px) 800px, 1200px'
-        }
+        return `${props.smallImage} 480w, ${props.mediumImage} 800w, ${props.largeImage} 1200w`
       }
       if (props.largeImage) {
-        return {
-          srcset: `${props.smallImage} 480w, ${props.largeImage} 1200w`,
-          sizes: '(max-width: 600px) 480px, 1200px'
-        }
+        return `${props.smallImage} 480w, ${props.largeImage} 1200w`
       }
       if (props.mediumImage) {
-        return {
-          srcset: `${props.smallImage} 480w, ${props.mediumImage} 800w`,
-          sizes: '(max-width: 600px) 480px, 800px'
-        }
+        return `${props.smallImage} 480w, ${props.mediumImage} 800w`
       }
-      return {
-        srcset: '',
-        sizes: ''
-      }
-    }
+      return ''
+    })
 
-    const { srcset, sizes } = composeSrcsetAndSizes()
-    return { srcset, sizes }
+    const computedSizes = computed(() => {
+      if (props.largeImage && props.mediumImage) {
+        return '(max-width: 600px) 480px, (max-width: 1200px) 800px, 1200px'
+      }
+      if (props.largeImage) {
+        return '(max-width: 600px) 480px, 1200px'
+      }
+      if (props.mediumImage) {
+        return '(max-width: 600px) 480px, 800px'
+      }
+      return ''
+    })
+
+    return { computedSrcset, computedSizes }
   }
 })
 </script>

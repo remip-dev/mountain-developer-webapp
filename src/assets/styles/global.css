@@ -4,6 +4,7 @@
   --primary-color: #fffbf6;
   --secondary-color: #ffeacb;
   --tertiary-color: #ff9d2a;
+  --text-color: #202020;
   --hover-color: #fff3e2;
   --hover-dark-color: #ad6315;
   --hover-button-color: #ad6315;
@@ -24,18 +25,20 @@ body {
   font-family: 'Lato', 'sans-serif';
   font-weight: 300;
   background-color: var(--primary-color);
-  color: var(--tertiary-color);
+  color: var(--text-color);
   overflow-x: hidden;
 }
 
 h1 {
   font-size: var(--h1-font-size);
   font-weight: 700;
+  color: var(--tertiary-color);
 }
 
 h2 {
   font-size: var(--h2-font-size);
   font-weight: 700;
+  color: var(--tertiary-color);
 }
 
 p,

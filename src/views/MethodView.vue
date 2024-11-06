@@ -55,19 +55,19 @@ onBeforeUnmount(() => {
         title="La Rencontre"
         description='<p><span class="citation">"Bonjour, je serai votre guide pour cette expédition !"</span></p>
         <p>
-          Dès que vous me contactez, nous fixons rapidement une <strong>rencontre</strong> — en présentiel ou en visioconférence — 
-          afin de faire connaissance et d’initier le projet. Cette première étape est cruciale pour <strong>poser les bases</strong> 
+          Dès que vous me contactez, nous fixons rapidement une <span>rencontre</span> — en présentiel ou en visioconférence — 
+          afin de faire connaissance et d’initier le projet. Cette première étape est cruciale pour <span>poser les bases</span> 
           de notre collaboration. Nous discutons de vos besoins, des objectifs de votre projet, et des défis à relever. 
-          Je m’assure de <strong>bien comprendre votre vision</strong>, vos attentes, et les utilisateurs finaux que vous visez.
+          Je m’assure de <span>bien comprendre votre vision</span>, vos attentes, et les utilisateurs finaux que vous visez.
         </p>
         <p>
-          Ensemble, nous <strong>cadrons</strong> clairement le <strong>périmètre du projet</strong> : qui sera responsable de quoi, quelles <strong>normes</strong> et 
-          <strong>contraintes</strong> devrons-nous respecter, quelles sont les <strong>fonctionnalités</strong> visées, quelles sont les <strong>priorités</strong> ? Cette 
+          Ensemble, nous <span>cadrons</span> clairement le <span>périmètre du projet</span> : qui sera responsable de quoi, quelles <span>normes</span> et 
+          <span>contraintes</span> devrons-nous respecter, quelles sont les <span>fonctionnalités</span> visées, quelles sont les <span>priorités</span> ? Cette 
           rencontre est aussi l’occasion de dès à présent parler de l’après (maintenance, transmission).
         </p>
         <p>
-          À la fin de cette première étape, nous aurons une <strong>vision claire et partagée</strong> du projet, des objectifs à 
-          atteindre, et des contraintes à respecter. J’aurai <strong>en ma possession tout le nécessaire</strong> pour pouvoir vous 
+          À la fin de cette première étape, nous aurons une <span>vision claire et partagée</span> du projet, des objectifs à 
+          atteindre, et des contraintes à respecter. J’aurai <span>en ma possession tout le nécessaire</span> pour pouvoir vous 
           proposer un cadrage de projet réfléchi en profondeur.
         </p>'
         :color="Color.White"
@@ -81,20 +81,20 @@ onBeforeUnmount(() => {
         title="La Planification"
         description='<p><span class="citation">"Une aventure comme celle-ci, ça se prépare !"</span></p>
         <p>
-          Une fois notre première rencontre terminée, <strong>je planche immédiatement sur votre projet</strong>. Cette phase est dédiée 
-          à la planification. L’objectif est clair : définir un <strong>Minimum Viable Product (MVP)</strong> — la première version  de 
-          votre application comprenant toutes les fonctionnalités prioritaires — ainsi qu’un <strong>plan d’action détaillé</strong> pour 
+          Une fois notre première rencontre terminée, <span>je planche immédiatement sur votre projet</span>. Cette phase est dédiée 
+          à la planification. L’objectif est clair : définir un <span>Minimum Viable Product (MVP)</span> — la première version  de 
+          votre application comprenant toutes les fonctionnalités prioritaires — ainsi qu’un <span>plan d’action détaillé</span> pour 
           atteindre cet objectif.
         </p>
         <p>
-          Je prends en compte tous les éléments discutés lors de notre première rencontre, tout en réalisant des <strong>recherches 
-          techniques approfondies</strong>. Quels outils et technologies sont les plus adaptés à votre projet ? Comment <strong>garantir la 
-          faisabilité</strong> tout en restant fidèle à vos attentes ?
+          Je prends en compte tous les éléments discutés lors de notre première rencontre, tout en réalisant des <span>recherches 
+          techniques approfondies</span>. Quels outils et technologies sont les plus adaptés à votre projet ? Comment <span>garantir la 
+          faisabilité</span> tout en restant fidèle à vos attentes ?
         </p>
         <p>
-          Quand tout est prêt, nous fixons un <strong>nouveau rendez-vous</strong>. Je vous présente le plan d’action, le MVP, ainsi qu’un 
-          devis clair et détaillé. Vous avez alors la possibilité de <strong>valider ce travail ou de demander des ajustements</strong> si 
-          nécessaire. Cette phase itérative garantit que nous sommes <strong>parfaitement alignés</strong> avant de commencer l’ascension.
+          Quand tout est prêt, nous fixons un <span>nouveau rendez-vous</span>. Je vous présente le plan d’action, le MVP, ainsi qu’un 
+          devis clair et détaillé. Vous avez alors la possibilité de <span>valider ce travail ou de demander des ajustements</span> si 
+          nécessaire. Cette phase itérative garantit que nous sommes <span>parfaitement alignés</span> avant de commencer l’ascension.
         </p>'
         :color="Color.Orange"
       />
@@ -107,17 +107,17 @@ onBeforeUnmount(() => {
         title="L'Ascension"
         description='<p><span class="citation">"Il ne reste plus qu’à grimper !"</span></p>
         <p>
-          Avec le plan d’action validé, il est temps d’attaquer la <strong>phase de développement</strong>. Cette étape suit au mieux 
-          le planning établi et peut inclure des <strong>échelons intermédiaires</strong> (livrables, démonstrations) si définis au 
+          Avec le plan d’action validé, il est temps d’attaquer la <span>phase de développement</span>. Cette étape suit au mieux 
+          le planning établi et peut inclure des <span>échelons intermédiaires</span> (livrables, démonstrations) si définis au 
           préalable.
         </p>
         <p>
-          Afin d’assurer une <strong>transparence totale</strong>, vous avez accès à un <strong>outil de suivi</strong> en temps réel, qui vous permet 
-          de visualiser l’avancement du projet à chaque étape. Si des <strong>ajustements</strong> sont <strong>nécessaires</strong> en cours de route, 
-          nous fixons rapidement un <strong>point pour revoir</strong> les délais et les attendus.
+          Afin d’assurer une <span>transparence totale</span>, vous avez accès à un <span>outil de suivi</span> en temps réel, qui vous permet 
+          de visualiser l’avancement du projet à chaque étape. Si des <span>ajustements</span> sont <span>nécessaires</span> en cours de route, 
+          nous fixons rapidement un <span>point pour revoir</span> les délais et les attendus.
         </p>
         <p>
-          Arrivés au sommet, je vous livre le <strong>produit final dans les temps</strong> et <strong>testé</strong> de fond en comble. 
+          Arrivés au sommet, je vous livre le <span>produit final dans les temps</span> et <span>testé</span> de fond en comble. 
         </p>'
         :color="Color.White"
       />
@@ -130,19 +130,19 @@ onBeforeUnmount(() => {
         title="La Redescente"
         description='<p><span class="citation">Nous voilà au sommet ! Mais seule la moitié du chemin est parcourue."</span></p>
         <p>
-          Une fois le produit final livré, <strong>je ne vous laisse pas là-haut tout seul</strong>. Vous bénéficiez d’une <strong>période de 
-          garantie de trois mois</strong> pour détecter le moindre bug. Tous les problèmes qui rentrent dans le cahier des 
-          charges seront <strong>corrigés gratuitement</strong>.
+          Une fois le produit final livré, <span>je ne vous laisse pas là-haut tout seul</span>. Vous bénéficiez d’une <span>période de 
+          garantie de trois mois</span> pour détecter le moindre bug. Tous les problèmes qui rentrent dans le cahier des 
+          charges seront <span>corrigés gratuitement</span>.
         </p>
         <p>
-          C’est aussi le moment de discuter de <strong>l’avenir de votre application</strong>. Si vous le souhaitez et si ce n’est pas 
-          déjà fait, nous pourrons mettre en place un <strong>contrat de maintenance</strong> pour assurer la pérennité de votre projet. 
-          Ensemble, nous veillons à ce que <strong>votre application continue de fonctionner à son meilleur niveau</strong>, bien après 
+          C’est aussi le moment de discuter de <span>l’avenir de votre application</span>. Si vous le souhaitez et si ce n’est pas 
+          déjà fait, nous pourrons mettre en place un <span>contrat de maintenance</span> pour assurer la pérennité de votre projet. 
+          Ensemble, nous veillons à ce que <span>votre application continue de fonctionner à son meilleur niveau</span>, bien après 
           l’ascension.
         </p>
         <p>
-          Enfin, <strong>si l’envie vous prend</strong> de lancer de nouveaux défis, nous pourrons repartir ensemble pour une nouvelle 
-          ascension, en reprenant à l’étape 01 pour <strong>concevoir la v2</strong> de votre projet ! 
+          Enfin, <span>si l’envie vous prend</span> de lancer de nouveaux défis, nous pourrons repartir ensemble pour une nouvelle 
+          ascension, en reprenant à l’étape 01 pour <span>concevoir la v2</span> de votre projet ! 
         </p>'
         :color="Color.Orange"
       />
@@ -180,7 +180,7 @@ h1 {
 }
 
 .button-container {
-  padding: 150px 0;
+  padding: 20px 0 50px;
 }
 
 .button-section {
@@ -190,18 +190,6 @@ h1 {
   justify-content: center;
   align-items: center;
   width: 100%;
-}
-
-@media (max-width: 1000px) {
-  .button-container {
-    padding: 100px 0;
-  }
-}
-
-@media (max-width: 780px) {
-  .button-container {
-    padding: 50px 0;
-  }
 }
 
 @media (max-width: 600px) {

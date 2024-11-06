@@ -86,10 +86,6 @@ onMounted(() => {
   background-color: var(--tertiary-color);
 }
 
-.beige {
-  color: var(--primary-color);
-}
-
 .left-container {
   display: flex;
   flex-direction: column;
@@ -122,6 +118,11 @@ onMounted(() => {
   font-family: 'Love Ya Like A Sister', cursive;
   font-weight: 400;
   font-style: normal;
+  color: var(--tertiary-color);
+}
+
+.beige {
+  color: var(--primary-color);
 }
 
 .image {
@@ -135,6 +136,16 @@ onMounted(() => {
 :deep(.citation) {
   font-weight: 700;
   font-style: italic;
+  color: var(--tertiary-color);
+}
+
+:deep(span) {
+  font-weight: 700;
+  color: var(--tertiary-color);
+}
+
+.beige :deep(span) {
+  color: var(--primary-color);
 }
 
 @media (max-width: 1220px) {

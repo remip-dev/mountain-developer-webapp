@@ -25,7 +25,7 @@ button {
   color: var(--primary-color);
   border: none;
   border-radius: 30px;
-  padding: 32px 72px;
+  padding: 25px 50px;
   font-size: var(--normal-font-size);
   font-weight: 300;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
@@ -40,6 +40,12 @@ button:hover {
 
 button:active {
   transform: scale(0.95);
+}
+
+@media (max-width: 1220px) {
+  button {
+    font-size: var(--tablet-normal-font-size);
+  }
 }
 
 @media (max-width: 780px) {

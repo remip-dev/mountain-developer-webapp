@@ -12,13 +12,13 @@ defineProps<{
 
 const router = useRouter()
 
-function handleClick() {
-  router.push({ name: 'detailedProject', params: { name: 'building' } })
+function handleClick(projectName: string) {
+  //router.push({ name: 'detailedProject', params: { name: projectName } }) Waiting the recommendations until deploying the access to detailed project page
 }
 </script>
 
 <template>
-  <div class="main-container" @click="handleClick">
+  <div class="main-container" @click="handleClick(project.title)">
     <div class="left-container">
       <MountainIllustration
         :year="project.year"
@@ -29,9 +29,7 @@ function handleClick() {
     </div>
     <div class="right-container">
       <RatingScale :mark="project.mark" />
-      <div class="description-container">
-        <p>{{ project.description }}</p>
-      </div>
+      <div v-html="project.description" class="description-container"></div>
       <div class="competences-container">
         <CompetenceBadge
           class="competence"
@@ -78,12 +76,12 @@ function handleClick() {
 }
 
 .description-container {
-  height: 160px;
+  height: 161px;
   overflow: hidden;
   margin: 12px 0 0 0;
 }
 
-.description-container p {
+.description-container :deep(p) {
   display: -webkit-box;
   -webkit-line-clamp: 6;
   -webkit-box-orient: vertical;
@@ -104,7 +102,7 @@ function handleClick() {
 }
 
 @media (max-width: 1220px) {
-  .description-container p {
+  .description-container :deep(p) {
     -webkit-line-clamp: 7;
   }
 
@@ -144,10 +142,10 @@ function handleClick() {
   }
 
   .description-container {
-    height: 100px;
+    height: 105px;
   }
 
-  .description-container p {
+  .description-container :deep(p) {
     -webkit-line-clamp: 5;
   }
 }

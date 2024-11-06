@@ -5,14 +5,24 @@ import 'swiper/css/navigation'
 import 'swiper/css/scrollbar'
 import { Navigation, Scrollbar } from 'swiper/modules'
 import ProjectOverview from './ProjectOverview.vue'
-import projects from '@/assets/projects.json'
+import { useProjectStore } from '@/stores/useProjectStore'
+import { onMounted, ref } from 'vue'
+import type { Project } from '@/interfaces/Project'
 
 const modules = [Navigation, Scrollbar]
+
+const projectStore = useProjectStore()
+
+const projects = ref<Project[]>([])
+
+onMounted(async () => {
+  projects.value = await projectStore.getProjects()
+})
 </script>
 
 <template>
   <swiper
-    :loop="true"
+    :loop="projects.length > 1"
     :scrollbar="{
       hide: true
     }"

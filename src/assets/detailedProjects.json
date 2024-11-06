@@ -1,0 +1,269 @@
+[
+  {
+    "title": "Le Développeur Montagnard",
+    "category": "Portfolio",
+    "year": 2024,
+    "length": "En cours",
+    "description": "<p>Le Développeur Montagnard, c'est mon espace personnel. Plongez dans cet univers inspiré de la montagne et suivez le parcours qui y est raconté : un monde de solutions digitales sans superflu, où chaque détail est pensé pour l'impact, la simplicité, mais toujours avec une touche de créativité et une histoire unique.</p> <p>Entièrement développé avec Vue.js et TypeScript à partir de maquettes épurées sur Figma, ce site, sans CMS surchargé, offre une expérience fluide et responsive. J'ai mis en place un déploiement automatisé via des workflows GitHub Actions, me permettant de l’enrichir et de l’optimiser constamment, au fil de l’aventure du Développeur Montagnard.</p>",
+    "competences": [
+      "Vue.js",
+      "Figma",
+      "CI/CD",
+      "TypeScript",
+      "Dev Frontend",
+      "Firebase",
+      "Github Actions"
+    ],
+    "images": [
+      {
+        "small": "https://urlr.me/R5KgF",
+        "medium": "https://urlr.me/RPDMj",
+        "large": "https://urlr.me/rZs8C",
+        "alt": "Page d'accueil"
+      },
+      {
+        "small": "https://urlr.me/jWPKb",
+        "medium": "https://urlr.me/NhjcR",
+        "large": "https://urlr.me/Trzpd",
+        "alt": "Page Méthode"
+      },
+      {
+        "small": "https://urlr.me/Vv3Gg",
+        "medium": "https://urlr.me/kNPmL",
+        "large": "https://urlr.me/bFx3j",
+        "alt": "Page Projets"
+      },
+      {
+        "small": "https://urlr.me/z4wJb",
+        "medium": "https://urlr.me/hG3ZS",
+        "large": "https://urlr.me/QgdtJ",
+        "alt": "Page Contact"
+      }
+    ],
+    "feedback": {
+      "rating": 4,
+      "client": "Freelance",
+      "name": "Rémi",
+      "opinion": "Bien que ce soit un simple site vitrine, j'ai concilié rapidité de développement et bonnes pratiques. Il est important pour moi de coder simplement et proprement n'importe quel projet. 4/5 seulement car on peut toujours faire mieux."
+    }
+  },
+  {
+    "title": "ELIoT",
+    "category": "SaaS",
+    "year": 2024,
+    "length": "6 mois",
+    "description": "<p>Le projet ELIoT (confidentiel), développé au sein de la DIN Grenoble chez ALTEN, a pour mission de relever les défis environnementaux posés par l'essor des objets connectés (IoT). Dans un contexte où leur nombre explose, l'impact de ces systèmes sur l'environnement est significatif. ELIoT répond à cette problématique en permettant d'évaluer l'empreinte carbone d’un système IoT sur l’ensemble de son cycle de vie et de son infrastructure.</p> <p>Pour offrir cette analyse, une application web a été créée. Au sein de l'équipe, j’ai contribué à la conception et l'implémentation du modèle de données, développé une API REST en Node.js et TypeScript, et aidé sur le développement du frontend avec Vue.js et TypeScript. J'ai également assuré la maintenance et l'intégration du service d'authentification CAS du laboratoire dans la plateforme ELIoT, ainsi que la mise en place de la CI/CD.</p> <p>Ce projet m’a permis de mettre en œuvre des pratiques de développement avancées telles que le Clean Code, le Domain-Driven Design et le Test-Driven Development. Ces méthodes garantissent non seulement un code maintenable et robuste, mais aussi une meilleure anticipation des évolutions du produit, essentielles pour un SaaS en constante évolution.</p>",
+    "competences": [
+      "Microsoft Azure",
+      "API REST",
+      "TypeScript",
+      "TDD",
+      "Node.js",
+      "DevOps",
+      "OAuth 2.0",
+      "Vue.js",
+      "Docker",
+      "CI/CD",
+      "Dev Backend",
+      "Dev Frontend",
+      "DDD",
+      "PostgreSQL",
+      "Express.js",
+      "Swagger"
+    ],
+    "images": [
+      {
+        "small": "https://urlr.me/8SfZB",
+        "medium": "https://urlr.me/96TJF",
+        "large": "https://urlr.me/9gNFb",
+        "alt": "Page de login"
+      },
+      {
+        "small": "https://firebasestorage.googleapis.com/v0/b/moutain-developer-webapp.appspot.com/o/Projects%20images%2Feliot_2_small.webp?alt=media&token=0fda803c-8156-436d-aef6-7fa8f389cfa5",
+        "medium": "https://firebasestorage.googleapis.com/v0/b/moutain-developer-webapp.appspot.com/o/Projects%20images%2Feliot_2_medium.webp?alt=media&token=e075b351-1d74-48c4-a143-549ad693ea05",
+        "large": "https://firebasestorage.googleapis.com/v0/b/moutain-developer-webapp.appspot.com/o/Projects%20images%2Feliot_2_large.webp?alt=media&token=112cf9b7-7409-4327-a217-4b50516d38f4",
+        "alt": "Page d'autorisation'"
+      },
+      {
+        "small": "https://firebasestorage.googleapis.com/v0/b/moutain-developer-webapp.appspot.com/o/Projects%20images%2Feliot_3_small.webp?alt=media&token=119b7df4-38a9-4ed6-8933-21e3585416e7",
+        "medium": "https://firebasestorage.googleapis.com/v0/b/moutain-developer-webapp.appspot.com/o/Projects%20images%2Feliot_3_medium.webp?alt=media&token=ece93ee3-03ce-4bfe-9260-cafc5fe6c1f7",
+        "large": "https://firebasestorage.googleapis.com/v0/b/moutain-developer-webapp.appspot.com/o/Projects%20images%2Feliot_3_large.webp?alt=media&token=3e227846-87e1-4c4b-ab5b-703c9bc05063",
+        "alt": "Page Life Cycle Assessment"
+      },
+      {
+        "small": "https://firebasestorage.googleapis.com/v0/b/moutain-developer-webapp.appspot.com/o/Projects%20images%2Feliot_4_small.webp?alt=media&token=8f4e40b1-da9e-4be3-bb14-af0480ab3517",
+        "medium": "https://firebasestorage.googleapis.com/v0/b/moutain-developer-webapp.appspot.com/o/Projects%20images%2Feliot_4_medium.webp?alt=media&token=bb217878-cab3-4a28-972b-7d1e7b0c02e7",
+        "large": "https://firebasestorage.googleapis.com/v0/b/moutain-developer-webapp.appspot.com/o/Projects%20images%2Feliot_4_large.webp?alt=media&token=ca6a72ab-637e-4849-9000-1c0fdf0b6753",
+        "alt": "Page Life Cycle Assessment"
+      }
+    ],
+    "feedback": {
+      "rating": 5,
+      "client": "ALTEN",
+      "name": "Arthur",
+      "opinion": "En attente de ton avis, n'hésite pas à me donner une note sur 5 ainsi qu'un petit commentaire !"
+    }
+  },
+  {
+    "title": "Intégration API",
+    "category": "Plugin WordPress",
+    "year": 2024,
+    "length": "1 mois",
+    "description": "<p>Japanime Universe propose une vaste collection de figurines manga sur son site e-commerce. L’équipe a fait appel à mes services pour intégrer automatiquement le catalogue de leur fournisseur, afin d’enrichir leur propre catalogue en temps réel. Grâce à cette intégration, les produits disponibles chez le fournisseur sont maintenant ajoutés automatiquement au site, et les commandes client sont directement transmises pour un traitement simplifié.</p> <p>Pour gérer cette intégration de manière flexible, j’ai développé un plugin WordPress personnalisé permettant à l’équipe de sélectionner les licences de produits à importer, de lancer manuellement la synchronisation, et de suivre son état en temps réel. Cette solution sur mesure garantit une synchronisation fluide et un contrôle total sur les produits disponibles, en facilitant l'administration quotidienne de leur catalogue.</p>",
+    "competences": ["WordPress", "PHP", "API", "Plugin WordPress"],
+    "images": [
+      {
+        "small": "https://firebasestorage.googleapis.com/v0/b/moutain-developer-webapp.appspot.com/o/Projects%20images%2Fjapanime_1_small.webp?alt=media&token=3e6f9ef8-ecbe-4708-822c-376f0964c9dc",
+        "medium": "https://firebasestorage.googleapis.com/v0/b/moutain-developer-webapp.appspot.com/o/Projects%20images%2Fjapanime_1_medium.webp?alt=media&token=4043825b-b136-4411-8ff6-a5739f307416",
+        "large": "https://firebasestorage.googleapis.com/v0/b/moutain-developer-webapp.appspot.com/o/Projects%20images%2Fjapanime_1_large.webp?alt=media&token=166f86bd-ccb7-49fa-8690-066178ddba63",
+        "alt": "Page d'accueil"
+      },
+      {
+        "small": "https://firebasestorage.googleapis.com/v0/b/moutain-developer-webapp.appspot.com/o/Projects%20images%2Fjapanime_2_small.webp?alt=media&token=c2212541-51f0-499e-811d-cfbf44b4cb4a",
+        "medium": "https://firebasestorage.googleapis.com/v0/b/moutain-developer-webapp.appspot.com/o/Projects%20images%2Fjapanime_2_medium.webp?alt=media&token=179324b4-3306-45b1-8404-b8c4c85d3858",
+        "large": "https://firebasestorage.googleapis.com/v0/b/moutain-developer-webapp.appspot.com/o/Projects%20images%2Fjapanime_2_large.webp?alt=media&token=48b3bb0f-3ca8-4a6f-828c-eda40782910c",
+        "alt": "Page Produit"
+      }
+    ],
+    "feedback": {
+      "rating": 5,
+      "client": "Japanime Universe",
+      "name": "Marlet",
+      "opinion": "En attente de ton avis, n'hésite pas à me donner une note sur 5 ainsi qu'un petit commentaire !"
+    }
+  },
+  {
+    "title": "LaboVersité",
+    "category": "Web-App",
+    "year": 2023,
+    "length": "5 mois",
+    "description": "<p>JAYA est une startup engagée pour la cause environnementale et la défense de la biodiversité. Pour encourager des pratiques de jardinage respectueuses de la nature, JAYA a développé une borne interactive en collaboration avec des jardineries, capable de recueillir les pratiques des utilisateurs et de leur fournir des conseils personnalisés : LaboVersité. Ma mission principale consistait à développer le frontend de cette application web en React, en collaboration avec l'équipe backend de JAYA. L'objectif était d'offrir une interface intuitive et accessible, guidant les utilisateurs à travers un questionnaire adapté et générant des recommandations sur mesure, accessibles via QR code ou e-mail.</p> <p>Durant cinq mois, notre équipe de quatre personnes a travaillé en étroite collaboration avec JAYA pour faire avancer ce projet ambitieux. Bien au-delà du simple développement d'une application, notre mission impliquait une étude de marché approfondie, la recherche de jardinerie partenaire et la mise au point d'une offre commerciale solide autour de la borne interactive. Ce projet a ainsi représenté un accompagnement complet dans la stratégie de croissance de JAYA, en intégrant à la fois la technique et la stratégie pour maximiser l'impact de la borne sur la sensibilisation du public.</p>",
+    "competences": ["React.js", "UI/UX Design", "Dev Frontend"],
+    "images": [
+      {
+        "small": "https://firebasestorage.googleapis.com/v0/b/moutain-developer-webapp.appspot.com/o/Projects%20images%2Fjaya_1_small.webp?alt=media&token=4db3dcbb-b271-43a7-934e-942a05d8d6de",
+        "medium": "https://firebasestorage.googleapis.com/v0/b/moutain-developer-webapp.appspot.com/o/Projects%20images%2Fjaya_1_medium.webp?alt=media&token=fe615d1f-911c-44e7-9016-ec3f009e2822",
+        "large": "https://firebasestorage.googleapis.com/v0/b/moutain-developer-webapp.appspot.com/o/Projects%20images%2Fjaya_1_large.webp?alt=media&token=23e6ad9c-d8e8-4ab6-8915-26cdd61862fe",
+        "alt": "Page d'accueil"
+      },
+      {
+        "small": "https://firebasestorage.googleapis.com/v0/b/moutain-developer-webapp.appspot.com/o/Projects%20images%2Fjaya_2_small.webp?alt=media&token=f4d2c8e4-f15c-4f02-8701-14b4ad988705",
+        "medium": "https://firebasestorage.googleapis.com/v0/b/moutain-developer-webapp.appspot.com/o/Projects%20images%2Fjaya_2_medium.webp?alt=media&token=adec7183-08c4-4c80-a19d-a0c908c805c9",
+        "large": "https://firebasestorage.googleapis.com/v0/b/moutain-developer-webapp.appspot.com/o/Projects%20images%2Fjaya_2_large.webp?alt=media&token=9fac7c24-8b0a-46bc-956a-2f72eb6e65b3",
+        "alt": "Page questionnaire"
+      },
+      {
+        "small": "https://firebasestorage.googleapis.com/v0/b/moutain-developer-webapp.appspot.com/o/Projects%20images%2Fjaya_3_small.webp?alt=media&token=c86c3c91-52d8-4fce-b5d6-698ffd5e9555",
+        "medium": "https://firebasestorage.googleapis.com/v0/b/moutain-developer-webapp.appspot.com/o/Projects%20images%2Fjaya_3_medium.webp?alt=media&token=a662e9b1-ed0b-4453-9f70-e50665f77663",
+        "large": "https://firebasestorage.googleapis.com/v0/b/moutain-developer-webapp.appspot.com/o/Projects%20images%2Fjaya_3_large.webp?alt=media&token=52657ef5-3eef-4105-b504-0685fa60864f",
+        "alt": "Page résultats"
+      },
+      {
+        "small": "https://firebasestorage.googleapis.com/v0/b/moutain-developer-webapp.appspot.com/o/Projects%20images%2Fjaya_4_small.webp?alt=media&token=3c14a9ad-b8b1-4d1c-baf0-8d61f20dfcef",
+        "medium": "https://firebasestorage.googleapis.com/v0/b/moutain-developer-webapp.appspot.com/o/Projects%20images%2Fjaya_4_medium.webp?alt=media&token=13272b68-723c-4b73-abcc-62f0647db4f1",
+        "large": "https://firebasestorage.googleapis.com/v0/b/moutain-developer-webapp.appspot.com/o/Projects%20images%2Fjaya_4_large.webp?alt=media&token=c86577f1-6482-40f1-8757-3af3e25ac510",
+        "alt": "Page conseil"
+      },
+      {
+        "small": "https://firebasestorage.googleapis.com/v0/b/moutain-developer-webapp.appspot.com/o/Projects%20images%2Fjaya_5_small.webp?alt=media&token=7d6e3ccb-4115-4256-8724-8f3801e1c255",
+        "medium": "https://firebasestorage.googleapis.com/v0/b/moutain-developer-webapp.appspot.com/o/Projects%20images%2Fjaya_5_medium.webp?alt=media&token=74cfe971-d944-4600-a8d6-c5353d4c36eb",
+        "large": "https://firebasestorage.googleapis.com/v0/b/moutain-developer-webapp.appspot.com/o/Projects%20images%2Fjaya_5_large.webp?alt=media&token=d6a23726-0ab8-4a8d-b2f0-2a2cc0b589b7",
+        "alt": "Page envoi des conseils"
+      },
+      {
+        "small": "https://firebasestorage.googleapis.com/v0/b/moutain-developer-webapp.appspot.com/o/Projects%20images%2Fjaya_6_small.webp?alt=media&token=834e9405-7322-41e5-8edd-86030858fc99",
+        "medium": "https://firebasestorage.googleapis.com/v0/b/moutain-developer-webapp.appspot.com/o/Projects%20images%2Fjaya_6_medium.webp?alt=media&token=9d2829b7-1329-4b3e-85e6-695e8754378e",
+        "large": "https://firebasestorage.googleapis.com/v0/b/moutain-developer-webapp.appspot.com/o/Projects%20images%2Fjaya_6_large.webp?alt=media&token=1b8a682a-7abf-43da-a33c-0f71f6f27c2d",
+        "alt": "Borne LaboVersité"
+      }
+    ],
+    "feedback": {
+      "rating": 5,
+      "client": "Jaya",
+      "name": "Julien",
+      "opinion": "En attente de ton avis, n'hésite pas à me donner une note sur 5 ainsi qu'un petit commentaire !"
+    }
+  },
+  {
+    "title": "Gestionnaire devis/facture",
+    "category": "Outil de gestion",
+    "year": 2022,
+    "length": "2 mois",
+    "description": "<p>ByCommute, basée à Grenoble, est spécialisée dans la conception et la distribution d’abris vélos et propose des solutions sur mesure pour accompagner la mobilité durable. Face à un besoin de gestion optimisée des propositions commerciales, ByCommute recherchait un outil simple et efficace pour créer des devis personnalisés, les convertir en factures, et suivre l'historique des documents pour chaque client. J’ai donc développé un gestionnaire de devis et factures complet, intégré à leur environnement de travail, permettant de produire des devis professionnels au format PDF et de les sauvegarder pour itération future. </p> <p>Ce système offre à ByCommute une flexibilité précieuse : chaque devis peut être facilement modifié et transformé en facture en un clic, simplifiant ainsi le suivi des projets et les tâches administratives. Cette automatisation améliore non seulement l’efficacité opérationnelle, mais contribue également à renforcer l’expérience client en assurant des échanges rapides et structurés.</p>",
+    "competences": [
+      "Automation",
+      "JavaScript",
+      "Google Apps Script",
+      "Google Workspace",
+      "HTML/CSS",
+      "PDF Generation"
+    ],
+    "images": [
+      {
+        "small": "https://firebasestorage.googleapis.com/v0/b/moutain-developer-webapp.appspot.com/o/Projects%20images%2Fbycommute_1_small.webp?alt=media&token=cedbac5a-ae84-468e-a2cc-6f24323497f9",
+        "medium": "https://firebasestorage.googleapis.com/v0/b/moutain-developer-webapp.appspot.com/o/Projects%20images%2Fbycommute_1_medium.webp?alt=media&token=7acb5284-ec9a-4e67-86c8-15cf1c34bd3a",
+        "large": "https://firebasestorage.googleapis.com/v0/b/moutain-developer-webapp.appspot.com/o/Projects%20images%2Fbycommute_1_large.webp?alt=media&token=66986871-1891-4731-8b5f-8032e26c1336",
+        "alt": "Page de sélection des items"
+      },
+      {
+        "small": "https://firebasestorage.googleapis.com/v0/b/moutain-developer-webapp.appspot.com/o/Projects%20images%2Fbycommute_2_small.webp?alt=media&token=42784a29-302c-4024-bcf0-dbfb531645da",
+        "medium": "https://firebasestorage.googleapis.com/v0/b/moutain-developer-webapp.appspot.com/o/Projects%20images%2Fbycommute_2_medium.webp?alt=media&token=d5636888-1eaf-453e-a231-61dcfb29738d",
+        "large": "https://firebasestorage.googleapis.com/v0/b/moutain-developer-webapp.appspot.com/o/Projects%20images%2Fbycommute_2_large.webp?alt=media&token=cf8bb8df-9c74-41f9-b70a-196e086511d3",
+        "alt": "Page informations devis/facture"
+      },
+      {
+        "small": "https://firebasestorage.googleapis.com/v0/b/moutain-developer-webapp.appspot.com/o/Projects%20images%2Fbycommute_3_small.webp?alt=media&token=72c66bcb-bb34-4b72-a4df-e10c158ddf6d",
+        "medium": "https://firebasestorage.googleapis.com/v0/b/moutain-developer-webapp.appspot.com/o/Projects%20images%2Fbycommute_3_medium.webp?alt=media&token=2419dbf0-178d-4b31-808b-b269e49ff99e",
+        "large": "https://firebasestorage.googleapis.com/v0/b/moutain-developer-webapp.appspot.com/o/Projects%20images%2Fbycommute_3_large.webp?alt=media&token=a7df5169-3656-4b18-9bb3-3286017aea63",
+        "alt": "Devis généré"
+      }
+    ],
+    "feedback": {
+      "rating": 5,
+      "client": "ByCommute",
+      "name": "Quentin",
+      "opinion": "En attente de ton avis, n'hésite pas à me donner une note sur 5 ainsi qu'un petit commentaire !"
+    }
+  },
+  {
+    "title": "Créateur de devis",
+    "category": "Outil de gestion",
+    "year": 2022,
+    "length": "2 mois",
+    "description": "<p>Zesti est une startup qui vise à transformer la distribution alimentaire en favorisant le circuit court, pour reconnecter producteurs locaux et consommateurs. Avec une large gamme de produits à leur disposition, l'équipe de Zesti avait besoin d'un moyen simple et efficace de créer des devis sur mesure au quotidien, tout en garantissant un format professionnel pour leurs clients.</p> <p>Pour répondre à ce besoin, j'ai conçu un outil de gestion des devis entièrement intégré à leur environnement de travail. Ce système permet à l’équipe de sélectionner facilement les produits depuis leur catalogue, d’assembler des devis personnalisés et de générer instantanément des documents PDF au format professionnel. Grâce à cet outil, Zesti peut offrir à ses clients des propositions précises et adaptées tout en simplifiant considérablement le processus administratif de création de devis.</p>",
+    "competences": [
+      "PDF Generation",
+      "Google Workspace",
+      "HTML/CSS",
+      "JavaScript",
+      "Google Apps Script",
+      "Automation"
+    ],
+    "images": [
+      {
+        "small": "https://firebasestorage.googleapis.com/v0/b/moutain-developer-webapp.appspot.com/o/Projects%20images%2Fzesti_1_small.webp?alt=media&token=abb12ea5-726f-4937-8fab-837b52f34dc4",
+        "medium": "https://firebasestorage.googleapis.com/v0/b/moutain-developer-webapp.appspot.com/o/Projects%20images%2Fzesti_1_medium.webp?alt=media&token=eed0209f-3d84-4d95-9a45-1d0748420a5a",
+        "large": "https://firebasestorage.googleapis.com/v0/b/moutain-developer-webapp.appspot.com/o/Projects%20images%2Fzesti_1_large.webp?alt=media&token=d2e21831-f4c2-4ecb-a0ad-db286ce009bf",
+        "alt": "Page sélection des produits et cnstruction du devis"
+      },
+      {
+        "small": "https://firebasestorage.googleapis.com/v0/b/moutain-developer-webapp.appspot.com/o/Projects%20images%2Fzesti_2_small.webp?alt=media&token=0fc3979b-2ee0-46f4-9721-80c1ce6cceac",
+        "medium": "https://firebasestorage.googleapis.com/v0/b/moutain-developer-webapp.appspot.com/o/Projects%20images%2Fzesti_2_medium.webp?alt=media&token=63cd570f-d75f-4fd8-b570-160814184a0d",
+        "large": "https://firebasestorage.googleapis.com/v0/b/moutain-developer-webapp.appspot.com/o/Projects%20images%2Fzesti_2_large.webp?alt=media&token=9c970158-862b-419a-ad23-89cb85704005",
+        "alt": "Page informations devis"
+      },
+      {
+        "small": "https://firebasestorage.googleapis.com/v0/b/moutain-developer-webapp.appspot.com/o/Projects%20images%2Fzesti_3_small.webp?alt=media&token=8e6ebe99-a2ea-4fd0-8660-f1a2926611d7",
+        "medium": "https://firebasestorage.googleapis.com/v0/b/moutain-developer-webapp.appspot.com/o/Projects%20images%2Fzesti_3_medium.webp?alt=media&token=16b06480-6f56-4ac9-94a1-8b2b4feb8e11",
+        "large": "https://firebasestorage.googleapis.com/v0/b/moutain-developer-webapp.appspot.com/o/Projects%20images%2Fzesti_3_large.webp?alt=media&token=76e74db7-d3bd-4006-aeb7-24734a0ce2aa",
+        "alt": "Devis généré"
+      }
+    ],
+    "feedback": {
+      "rating": 5,
+      "client": "Zesti",
+      "name": "Laetitia",
+      "opinion": "En attente de ton avis, n'hésite pas à me donner une note sur 5 ainsi qu'un petit commentaire !"
+    }
+  }
+]

@@ -23,4 +23,10 @@ export default defineComponent({
     font-size: var(--tablet-h2-font-size);
   }
 }
+
+@media (max-width: 400px) {
+  .site-name {
+    letter-spacing: 8px;
+  }
+}
 </style>

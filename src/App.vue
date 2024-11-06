@@ -37,21 +37,21 @@ import SimpleFooter from './components/SimpleFooter.vue'
 }
 
 .main-content-container {
-  margin: 15vh 9vw 0;
+  margin: 135px 9vw 0;
   z-index: 0;
 }
 
 .no-lateral-margin {
-  margin: 15vh 0 0;
+  margin: 135px 0 0;
 }
 
 @media (max-width: 1220px) {
   .main-content-container {
-    margin: 15vh 70px 0;
+    margin: 135px 70px 0;
   }
 
   .no-lateral-margin {
-    margin: 15vh 0 0;
+    margin: 135px 0 0;
   }
 }
 
@@ -62,17 +62,17 @@ import SimpleFooter from './components/SimpleFooter.vue'
   }
 
   .no-lateral-margin {
-    margin: 15vh 0 0;
+    margin: 135px 0 0;
   }
 }
 
 @media (max-width: 780px) {
   .main-content-container {
-    margin: 15vh 30px 0;
+    margin: 90px 30px 0;
   }
 
   .no-lateral-margin {
-    margin: 15vh 0 0;
+    margin: 90px 0 0;
   }
 }
 
@@ -83,11 +83,11 @@ import SimpleFooter from './components/SimpleFooter.vue'
   }
 
   .main-content-container {
-    margin: 15vh 20px 0;
+    margin: 70px 20px 0;
   }
 
   .no-lateral-margin {
-    margin: 15vh 0 0;
+    margin: 70px 0 0;
   }
 }
 </style>
