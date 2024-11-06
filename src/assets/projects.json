@@ -3,7 +3,12 @@
     "title": "Le Développeur Montagnard",
     "category": "Portfolio",
     "year": 2024,
-    "images": ["https://urlr.me/mLYns", "https://urlr.me/LkQWV", "https://urlr.me/ctjY2"],
+    "images": [
+      "https://firebasestorage.googleapis.com/v0/b/moutain-developer-webapp.appspot.com/o/Projects%20images%2Fmoutain_developer_1_small.webp?alt=media&token=43730c1f-629c-42a2-aabf-6f65d0ec2f90",
+      "https://firebasestorage.googleapis.com/v0/b/moutain-developer-webapp.appspot.com/o/Projects%20images%2Fmoutain_developer_2_small.webp?alt=media&token=c6a96c44-b28b-440d-ac3c-ff07805dfe68",
+      "https://firebasestorage.googleapis.com/v0/b/moutain-developer-webapp.appspot.com/o/Projects%20images%2Fmoutain_developer_3_small.webp?alt=media&token=1d80c849-6ca2-42fd-a3e1-0c0eb16f3a59",
+      "https://firebasestorage.googleapis.com/v0/b/moutain-developer-webapp.appspot.com/o/Projects%20images%2Fmoutain_developer_4_small.webp?alt=media&token=062b3a71-6eb6-4316-b9b2-06e12f80e8a1"
+    ],
     "mark": 4,
     "description": "<p>Le Développeur Montagnard, c'est mon espace personnel. Plongez dans cet univers inspiré de la montagne et suivez le parcours qui y est raconté : un monde de solutions digitales sans superflu, où chaque détail est pensé pour l'impact, la simplicité, mais toujours avec une touche de créativité et une histoire unique.</p> <p>Entièrement développé avec Vue.js et TypeScript à partir de maquettes épurées sur Figma, ce site, sans CMS surchargé, offre une expérience fluide et responsive. J'ai mis en place un déploiement automatisé via des workflows GitHub Actions, me permettant de l’enrichir et de l’optimiser constamment, au fil de l’aventure du Développeur Montagnard.</p>",
     "competences": ["Vue.js", "Figma", "CI/CD", "TypeScript", "Dev Frontend"]
@@ -12,7 +17,12 @@
     "title": "ELIoT",
     "category": "SaaS",
     "year": 2024,
-    "images": ["https://urlr.me/X83vK", "https://urlr.me/Fs9RT"],
+    "images": [
+      "https://firebasestorage.googleapis.com/v0/b/moutain-developer-webapp.appspot.com/o/Projects%20images%2Feliot_1_small.webp?alt=media&token=63f47a66-f5c0-4a76-9c9b-2f812c3d809d",
+      "https://firebasestorage.googleapis.com/v0/b/moutain-developer-webapp.appspot.com/o/Projects%20images%2Feliot_2_small.webp?alt=media&token=0fda803c-8156-436d-aef6-7fa8f389cfa5",
+      "https://firebasestorage.googleapis.com/v0/b/moutain-developer-webapp.appspot.com/o/Projects%20images%2Feliot_3_small.webp?alt=media&token=119b7df4-38a9-4ed6-8933-21e3585416e7",
+      "https://firebasestorage.googleapis.com/v0/b/moutain-developer-webapp.appspot.com/o/Projects%20images%2Feliot_4_small.webp?alt=media&token=8f4e40b1-da9e-4be3-bb14-af0480ab3517"
+    ],
     "mark": 5,
     "description": "<p>Le projet ELIoT, développé au sein de la DIN Grenoble chez ALTEN, a pour mission de relever les défis environnementaux posés par l'essor des objets connectés (IoT). Dans un contexte où leur nombre explose, l'impact de ces systèmes sur l'environnement est significatif. ELIoT répond à cette problématique en permettant d'évaluer l'empreinte carbone d’un système IoT sur l’ensemble de son cycle de vie et de son infrastructure.</p> <p>Pour offrir cette analyse, une application web a été créée. Au sein de l'équipe, j’ai contribué à la conception et l'implémentation du modèle de données, développé une API REST en Node.js et TypeScript, et aidé sur le développement du frontend avec Vue.js et TypeScript. J'ai également assuré la maintenance et l'intégration du service d'authentification CAS du laboratoire dans la plateforme ELIoT, ainsi que la mise en place de la CI/CD.</p> <p>Ce projet m’a permis de mettre en œuvre des pratiques de développement avancées telles que le Clean Code, le Domain-Driven Design et le Test-Driven Development. Ces méthodes garantissent non seulement un code maintenable et robuste, mais aussi une meilleure anticipation des évolutions du produit, essentielles pour un SaaS en constante évolution.</p>",
     "competences": [
@@ -38,7 +48,10 @@
     "title": "Intégration API",
     "category": "Plugin WordPress",
     "year": 2024,
-    "images": ["https://urlr.me/vyf1n", "https://urlr.me/wkfQp"],
+    "images": [
+      "https://firebasestorage.googleapis.com/v0/b/moutain-developer-webapp.appspot.com/o/Projects%20images%2Fjapanime_1_small.webp?alt=media&token=3e6f9ef8-ecbe-4708-822c-376f0964c9dc",
+      "https://firebasestorage.googleapis.com/v0/b/moutain-developer-webapp.appspot.com/o/Projects%20images%2Fjapanime_2_small.webp?alt=media&token=c2212541-51f0-499e-811d-cfbf44b4cb4a"
+    ],
     "mark": 5,
     "description": "<p>Japanime Universe propose une vaste collection de figurines manga sur son site e-commerce. L’équipe a fait appel à mes services pour intégrer automatiquement le catalogue de leur fournisseur, afin d’enrichir leur propre catalogue en temps réel. Grâce à cette intégration, les produits disponibles chez le fournisseur sont maintenant ajoutés automatiquement au site, et les commandes client sont directement transmises pour un traitement simplifié.</p> <p>Pour gérer cette intégration de manière flexible, j’ai développé un plugin WordPress personnalisé permettant à l’équipe de sélectionner les licences de produits à importer, de lancer manuellement la synchronisation, et de suivre son état en temps réel. Cette solution sur mesure garantit une synchronisation fluide et un contrôle total sur les produits disponibles, en facilitant l'administration quotidienne de leur catalogue.</p>",
     "competences": ["WordPress", "PHP", "API", "Plugin WordPress"]
@@ -47,7 +60,14 @@
     "title": "LaboVersité",
     "category": "Web-App",
     "year": 2023,
-    "images": ["https://urlr.me/sCvLd", "https://urlr.me/LZcdf", "https://urlr.me/y6wd2"],
+    "images": [
+      "https://firebasestorage.googleapis.com/v0/b/moutain-developer-webapp.appspot.com/o/Projects%20images%2Fjaya_1_small.webp?alt=media&token=4db3dcbb-b271-43a7-934e-942a05d8d6de",
+      "https://firebasestorage.googleapis.com/v0/b/moutain-developer-webapp.appspot.com/o/Projects%20images%2Fjaya_2_small.webp?alt=media&token=f4d2c8e4-f15c-4f02-8701-14b4ad988705",
+      "https://firebasestorage.googleapis.com/v0/b/moutain-developer-webapp.appspot.com/o/Projects%20images%2Fjaya_3_small.webp?alt=media&token=c86c3c91-52d8-4fce-b5d6-698ffd5e9555",
+      "https://firebasestorage.googleapis.com/v0/b/moutain-developer-webapp.appspot.com/o/Projects%20images%2Fjaya_4_small.webp?alt=media&token=3c14a9ad-b8b1-4d1c-baf0-8d61f20dfcef",
+      "https://firebasestorage.googleapis.com/v0/b/moutain-developer-webapp.appspot.com/o/Projects%20images%2Fjaya_5_small.webp?alt=media&token=7d6e3ccb-4115-4256-8724-8f3801e1c255",
+      "https://firebasestorage.googleapis.com/v0/b/moutain-developer-webapp.appspot.com/o/Projects%20images%2Fjaya_6_small.webp?alt=media&token=834e9405-7322-41e5-8edd-86030858fc99"
+    ],
     "mark": 5,
     "description": "<p>JAYA est une startup engagée pour la cause environnementale et la défense de la biodiversité. Pour encourager des pratiques de jardinage respectueuses de la nature, JAYA a développé une borne interactive en collaboration avec des jardineries, capable de recueillir les pratiques des utilisateurs et de leur fournir des conseils personnalisés : LaboVersité. Ma mission principale consistait à développer le frontend de cette application web en React, en collaboration avec l'équipe backend de JAYA. L'objectif était d'offrir une interface intuitive et accessible, guidant les utilisateurs à travers un questionnaire adapté et générant des recommandations sur mesure, accessibles via QR code ou e-mail.</p> <p>Durant cinq mois, notre équipe de quatre personnes a travaillé en étroite collaboration avec JAYA pour faire avancer ce projet ambitieux. Bien au-delà du simple développement d'une application, notre mission impliquait une étude de marché approfondie, la recherche de jardinerie partenaire et la mise au point d'une offre commerciale solide autour de la borne interactive. Ce projet a ainsi représenté un accompagnement complet dans la stratégie de croissance de JAYA, en intégrant à la fois la technique et la stratégie pour maximiser l'impact de la borne sur la sensibilisation du public.</p>",
     "competences": ["React.js", "UI/UX Design", "Dev Frontend"]
@@ -56,7 +76,11 @@
     "title": "Gestionnaire devis/facture",
     "category": "Outil de gestion",
     "year": 2022,
-    "images": ["https://urlr.me/Swk5f", "https://urlr.me/R2xjg", "https://urlr.me/21YdN"],
+    "images": [
+      "https://firebasestorage.googleapis.com/v0/b/moutain-developer-webapp.appspot.com/o/Projects%20images%2Fbycommute_1_small.webp?alt=media&token=cedbac5a-ae84-468e-a2cc-6f24323497f9",
+      "https://firebasestorage.googleapis.com/v0/b/moutain-developer-webapp.appspot.com/o/Projects%20images%2Fbycommute_2_small.webp?alt=media&token=42784a29-302c-4024-bcf0-dbfb531645da",
+      "https://firebasestorage.googleapis.com/v0/b/moutain-developer-webapp.appspot.com/o/Projects%20images%2Fbycommute_3_small.webp?alt=media&token=72c66bcb-bb34-4b72-a4df-e10c158ddf6d"
+    ],
     "mark": 5,
     "description": "<p>ByCommute, basée à Grenoble, est spécialisée dans la conception et la distribution d’abris vélos et propose des solutions sur mesure pour accompagner la mobilité durable. Face à un besoin de gestion optimisée des propositions commerciales, ByCommute recherchait un outil simple et efficace pour créer des devis personnalisés, les convertir en factures, et suivre l'historique des documents pour chaque client. J’ai donc développé un gestionnaire de devis et factures complet, intégré à leur environnement de travail, permettant de produire des devis professionnels au format PDF et de les sauvegarder pour itération future. </p> <p>Ce système offre à ByCommute une flexibilité précieuse : chaque devis peut être facilement modifié et transformé en facture en un clic, simplifiant ainsi le suivi des projets et les tâches administratives. Cette automatisation améliore non seulement l’efficacité opérationnelle, mais contribue également à renforcer l’expérience client en assurant des échanges rapides et structurés.</p>",
     "competences": [
@@ -72,7 +96,11 @@
     "title": "Créateur de devis",
     "category": "Outil de gestion",
     "year": 2022,
-    "images": ["https://urlr.me/pfTsZ", "https://urlr.me/pNgnZ", "https://urlr.me/6mT35"],
+    "images": [
+      "https://firebasestorage.googleapis.com/v0/b/moutain-developer-webapp.appspot.com/o/Projects%20images%2Fzesti_1_small.webp?alt=media&token=abb12ea5-726f-4937-8fab-837b52f34dc4",
+      "https://firebasestorage.googleapis.com/v0/b/moutain-developer-webapp.appspot.com/o/Projects%20images%2Fzesti_2_small.webp?alt=media&token=0fc3979b-2ee0-46f4-9721-80c1ce6cceac",
+      "https://firebasestorage.googleapis.com/v0/b/moutain-developer-webapp.appspot.com/o/Projects%20images%2Fzesti_3_small.webp?alt=media&token=8e6ebe99-a2ea-4fd0-8660-f1a2926611d7"
+    ],
     "mark": 5,
     "description": "<p>Zesti est une startup qui vise à transformer la distribution alimentaire en favorisant le circuit court, pour reconnecter producteurs locaux et consommateurs. Avec une large gamme de produits à leur disposition, l'équipe de Zesti avait besoin d'un moyen simple et efficace de créer des devis sur mesure au quotidien, tout en garantissant un format professionnel pour leurs clients.</p> <p>Pour répondre à ce besoin, j'ai conçu un outil de gestion des devis entièrement intégré à leur environnement de travail. Ce système permet à l’équipe de sélectionner facilement les produits depuis leur catalogue, d’assembler des devis personnalisés et de générer instantanément des documents PDF au format professionnel. Grâce à cet outil, Zesti peut offrir à ses clients des propositions précises et adaptées tout en simplifiant considérablement le processus administratif de création de devis.</p>",
     "competences": [
