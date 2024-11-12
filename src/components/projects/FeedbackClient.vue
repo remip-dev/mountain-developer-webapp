@@ -51,6 +51,11 @@ defineProps<{
 
 .opinion {
   margin-bottom: 0;
+  margin-top: 0;
+}
+
+.opinion :deep(p) {
+  margin-bottom: 0;
 }
 
 .scale :deep(.mountain) {
