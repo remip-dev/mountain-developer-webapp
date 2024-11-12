@@ -44,17 +44,17 @@ async function findPreviousProjectName(currentIndex: number): Promise<string> {
   const previousIndex = (currentIndex - 1 + projects.value.length) % projects.value.length
   return projects.value[previousIndex].title
 }
-// WAITING RECOMMENDATIONS
+
 async function goToNextProject() {
-  // const currentIndex = await findProjectIndex(projectName.value)
-  // const nextProjectName = await findNextProjectName(currentIndex)
-  // router.push({ name: 'detailedProject', params: { name: nextProjectName } })
+  const currentIndex = await findProjectIndex(projectName.value)
+  const nextProjectName = await findNextProjectName(currentIndex)
+  router.push({ name: 'detailedProject', params: { name: nextProjectName } })
 }
 
 async function goToPreviousProject() {
-  // const currentIndex = await findProjectIndex(projectName.value)
-  // const previousProjectName = await findPreviousProjectName(currentIndex)
-  // router.push({ name: 'detailedProject', params: { name: previousProjectName } })
+  const currentIndex = await findProjectIndex(projectName.value)
+  const previousProjectName = await findPreviousProjectName(currentIndex)
+  router.push({ name: 'detailedProject', params: { name: previousProjectName } })
 }
 </script>
 

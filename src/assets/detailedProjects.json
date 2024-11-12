@@ -98,10 +98,10 @@
       }
     ],
     "feedback": {
-      "rating": 5,
-      "client": "ALTEN",
-      "name": "Arthur",
-      "opinion": "En attente de ton avis, n'hésite pas à me donner une note sur 5 ainsi qu'un petit commentaire !"
+      "rating": 0,
+      "client": "",
+      "name": "",
+      "opinion": "Le client n'a pas soumis son avis sur ce projet"
     }
   },
   {
@@ -129,7 +129,7 @@
       "rating": 5,
       "client": "Japanime Universe",
       "name": "Marlet",
-      "opinion": "En attente de ton avis, n'hésite pas à me donner une note sur 5 ainsi qu'un petit commentaire !"
+      "opinion": "C'était un plaisir de bosser avec Rémi pour l'intégration de l'API de notre fournisseur sur notre site Wordpress. Il a su mettre en place un outil simple d'utilisation, qui répond à nos attentes en termes de mise à jour de produit sur notre catalogue."
     }
   },
   {
@@ -178,10 +178,10 @@
       }
     ],
     "feedback": {
-      "rating": 5,
-      "client": "Jaya",
-      "name": "Julien",
-      "opinion": "En attente de ton avis, n'hésite pas à me donner une note sur 5 ainsi qu'un petit commentaire !"
+      "rating": 0,
+      "client": "",
+      "name": "",
+      "opinion": "Le client n'a pas soumis son avis sur ce projet"
     }
   },
   {
@@ -222,7 +222,7 @@
       "rating": 5,
       "client": "ByCommute",
       "name": "Quentin",
-      "opinion": "En attente de ton avis, n'hésite pas à me donner une note sur 5 ainsi qu'un petit commentaire !"
+      "opinion": "Rémi nous a été d'une grande aide pour ByCommute, il nous a permis d'avoir un outil de devis qui correspondait parfaitement à nos besoins et qui nous a permis de gagner du temps et même des clients ! Sérieux, pro et très bon techniquement, je ne peux que le recommander !"
     }
   },
   {
@@ -260,10 +260,10 @@
       }
     ],
     "feedback": {
-      "rating": 5,
-      "client": "Zesti",
-      "name": "Laetitia",
-      "opinion": "En attente de ton avis, n'hésite pas à me donner une note sur 5 ainsi qu'un petit commentaire !"
+      "rating": 0,
+      "client": "",
+      "name": "",
+      "opinion": "Le client n'a pas soumis son avis sur ce projet"
     }
   }
 ]
