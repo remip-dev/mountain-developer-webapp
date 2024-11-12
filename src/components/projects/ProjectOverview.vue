@@ -13,7 +13,7 @@ defineProps<{
 const router = useRouter()
 
 function handleClick(projectName: string) {
-  //router.push({ name: 'detailedProject', params: { name: projectName } }) Waiting the recommendations until deploying the access to detailed project page
+  router.push({ name: 'detailedProject', params: { name: projectName } })
 }
 </script>
 
