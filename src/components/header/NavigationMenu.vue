@@ -1,3 +1,22 @@
+<script setup lang="ts">
+import { ref, computed } from 'vue'
+import { useRoute } from 'vue-router'
+
+// State pour gérer l'ouverture/fermeture du menu
+const isMenuOpen = ref(false)
+
+// Fonction pour basculer l'état du menu
+const toggleMenu = () => {
+  isMenuOpen.value = !isMenuOpen.value
+}
+
+// Accéder à la route actuelle
+const route = useRoute()
+
+// Computed pour activer le lien "Les Projets" pour toutes les sous-routes de /projects
+const isProjectsActive = computed(() => route.path.startsWith('/projects'))
+</script>
+
 <template>
   <nav>
     <button class="burger-menu" @click="toggleMenu">
@@ -7,31 +26,11 @@
     <div class="nav-links" :class="{ 'menu-open': isMenuOpen }" @click="toggleMenu">
       <RouterLink to="/" exact-active-class="active">L'Accueil</RouterLink>
       <RouterLink to="/method" exact-active-class="active">La Méthode</RouterLink>
-      <RouterLink to="/projects" exact-active-class="active">Les Projets</RouterLink>
+      <RouterLink to="/projects" :class="{ active: isProjectsActive }">Les Projets</RouterLink>
       <RouterLink to="/contact" exact-active-class="active">Contact</RouterLink>
     </div>
   </nav>
 </template>
-
-<script lang="ts">
-import { defineComponent, ref } from 'vue'
-
-export default defineComponent({
-  name: 'NavigationMenu',
-  setup() {
-    const isMenuOpen = ref(false)
-
-    const toggleMenu = () => {
-      isMenuOpen.value = !isMenuOpen.value
-    }
-
-    return {
-      isMenuOpen,
-      toggleMenu
-    }
-  }
-})
-</script>
 
 <style scoped>
 .burger-menu {
