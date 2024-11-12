@@ -1,8 +1,14 @@
-import { describe, it, expect } from 'vitest'
+import { describe, it, expect, vi } from 'vitest'
 import { mount } from '@vue/test-utils'
 import HeaderComponent from '../../header/HeaderComponent.vue'
 import SiteName from '../../header/SiteName.vue'
 import NavigationMenu from '../../header/NavigationMenu.vue'
+
+vi.mock('vue-router', () => ({
+  useRoute: () => ({
+    path: '/'
+  })
+}))
 
 describe('HeaderComponent.vue', () => {
   it('renders the correct components', () => {
