@@ -18,7 +18,7 @@ export async function fetchProjectDetails(projectName: string): Promise<Detailed
     case 'Intégration API':
       return detailedProjects[2]
 
-    case 'LaboVersité':
+    case 'Borne Biodiversité':
       return detailedProjects[3]
 
     case 'Gestionnaire devis/facture':

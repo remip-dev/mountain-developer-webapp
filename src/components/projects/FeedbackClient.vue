@@ -15,7 +15,7 @@ defineProps<{
     </div>
     <div class="rating-container">
       <RatingScale class="scale" :mark="feedback.rating" />
-      <p>{{ feedback.opinion }}</p>
+      <p class="opinion" v-html="feedback.opinion"></p>
     </div>
   </div>
 </template>
@@ -49,7 +49,7 @@ defineProps<{
   justify-content: center;
 }
 
-.rating-container p {
+.opinion {
   margin-bottom: 0;
 }
 

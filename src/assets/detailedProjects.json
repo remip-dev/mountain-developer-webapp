@@ -44,7 +44,7 @@
       "rating": 4,
       "client": "Freelance",
       "name": "Rémi",
-      "opinion": "Bien que ce soit un simple site vitrine, j'ai concilié rapidité de développement et bonnes pratiques. Il est important pour moi de coder simplement et proprement n'importe quel projet. 4/5 seulement car on peut toujours faire mieux."
+      "opinion": "<p>Bien que ce soit un simple site vitrine, j'ai concilié rapidité de développement et bonnes pratiques.</p><p>Il est important pour moi de coder simplement et proprement n'importe quel projet.</p><p>4/5 seulement car on peut toujours faire mieux :)</p>"
     }
   },
   {
@@ -129,11 +129,11 @@
       "rating": 5,
       "client": "Japanime Universe",
       "name": "Marlet",
-      "opinion": "C'était un plaisir de bosser avec Rémi pour l'intégration de l'API de notre fournisseur sur notre site Wordpress. Il a su mettre en place un outil simple d'utilisation, qui répond à nos attentes en termes de mise à jour de produit sur notre catalogue."
+      "opinion": "<p>C'était un plaisir de bosser avec Rémi pour l'intégration de l'API de notre fournisseur sur notre site Wordpress.</p><p>Il a su mettre en place un outil simple d'utilisation, qui répond à nos attentes en termes de mise à jour de produit sur notre catalogue.</p>"
     }
   },
   {
-    "title": "LaboVersité",
+    "title": "Borne Biodiversité",
     "category": "Web-App",
     "year": 2023,
     "length": "5 mois",
@@ -174,14 +174,14 @@
         "small": "https://firebasestorage.googleapis.com/v0/b/moutain-developer-webapp.appspot.com/o/Projects%20images%2Fjaya_6_small.webp?alt=media&token=834e9405-7322-41e5-8edd-86030858fc99",
         "medium": "https://firebasestorage.googleapis.com/v0/b/moutain-developer-webapp.appspot.com/o/Projects%20images%2Fjaya_6_medium.webp?alt=media&token=9d2829b7-1329-4b3e-85e6-695e8754378e",
         "large": "https://firebasestorage.googleapis.com/v0/b/moutain-developer-webapp.appspot.com/o/Projects%20images%2Fjaya_6_large.webp?alt=media&token=1b8a682a-7abf-43da-a33c-0f71f6f27c2d",
-        "alt": "Borne LaboVersité"
+        "alt": "Borne Biodiversité"
       }
     ],
     "feedback": {
-      "rating": 0,
-      "client": "",
-      "name": "",
-      "opinion": "Le client n'a pas soumis son avis sur ce projet"
+      "rating": 5,
+      "client": "JAYA",
+      "name": "Julien",
+      "opinion": "<p>C'était un plaisir de travailler avec Rémi.</p><p>Il s'est fortement impliqué et nous a permis de construire une proposition commerciale aboutie, ainsi qu'une première version démonstrative de l'application, pleinement fonctionnelle.</p> <p>Merci :)</p>"
     }
   },
   {
@@ -222,7 +222,7 @@
       "rating": 5,
       "client": "ByCommute",
       "name": "Quentin",
-      "opinion": "Rémi nous a été d'une grande aide pour ByCommute, il nous a permis d'avoir un outil de devis qui correspondait parfaitement à nos besoins et qui nous a permis de gagner du temps et même des clients ! Sérieux, pro et très bon techniquement, je ne peux que le recommander !"
+      "opinion": "<p>Rémi a été d'une grande aide pour ByCommute.</p><p>Il nous a permis d'avoir un outil de devis qui correspondait parfaitement à nos besoins et qui nous a permis de gagner du temps et même des clients !</p><p>Sérieux, pro et très bon techniquement, je ne peux que le recommander !</p>"
     }
   },
   {
