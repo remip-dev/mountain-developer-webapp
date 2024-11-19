@@ -31,7 +31,7 @@ import SimpleFooter from './components/SimpleFooter.vue'
   left: 0px;
   right: 0px;
   top: 0px;
-  padding: 30px 30px 0 30px;
+  padding: 10px 30px 0 30px;
   background-color: var(--primary-color);
   border: none;
 }
@@ -39,6 +39,10 @@ import SimpleFooter from './components/SimpleFooter.vue'
 .main-content-container {
   margin: 135px 9vw 0;
   z-index: 0;
+}
+
+.no-top-margin {
+  margin: 0;
 }
 
 .no-lateral-margin {
@@ -53,6 +57,9 @@ import SimpleFooter from './components/SimpleFooter.vue'
   .no-lateral-margin {
     margin: 135px 0 0;
   }
+  .no-top-margin {
+    margin: 0;
+  }
 }
 
 @media (max-width: 1000px) {
@@ -64,6 +71,9 @@ import SimpleFooter from './components/SimpleFooter.vue'
   .no-lateral-margin {
     margin: 135px 0 0;
   }
+  .no-top-margin {
+    margin: 0;
+  }
 }
 
 @media (max-width: 780px) {
@@ -73,6 +83,9 @@ import SimpleFooter from './components/SimpleFooter.vue'
 
   .no-lateral-margin {
     margin: 90px 0 0;
+  }
+  .no-top-margin {
+    margin: 0;
   }
 }
 
@@ -88,6 +101,12 @@ import SimpleFooter from './components/SimpleFooter.vue'
 
   .no-lateral-margin {
     margin: 70px 0 0;
+  }
+  .no-top-margin {
+    margin: 0;
+  }
+  .no-top-margin {
+    margin: 0;
   }
 }
 </style>

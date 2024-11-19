@@ -1,5 +1,8 @@
 <template>
-  <div class="site-name">RÉMI POLICET</div>
+  <div class="container">
+    <img class="emoji" src="@/assets/images/mountain_emoji.webp" />
+    <div class="site-name bold-maj">RÉMI POLICET</div>
+  </div>
 </template>
 
 <script lang="ts">
@@ -11,11 +14,22 @@ export default defineComponent({
 </script>
 
 <style scoped>
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: end;
+  gap: 15px;
+}
+.emoji {
+  width: 60px;
+  height: 60px;
+}
+
 .site-name {
-  font-size: var(--h2-font-size);
-  font-weight: 700;
+  font-size: 40px;
   color: var(--tertiary-color);
-  letter-spacing: 10px;
+  letter-spacing: 12px;
+  margin-bottom: 10px;
 }
 
 @media (max-width: 600px) {

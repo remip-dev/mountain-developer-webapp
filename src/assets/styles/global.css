@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chewy&display=swap');
 
 :root {
   --primary-color: #fffbf6;
@@ -19,6 +21,42 @@
   --tablet-normal-font-size: 17px;
   --tablet-h2-font-size: 28px;
   --tablet-h1-font-size: 45px;
+}
+
+.title-maj {
+  font-family: 'Chewy';
+  font-size: 58px;
+  line-height: 75.8px;
+}
+
+.h2-maj {
+  font-family: 'Chewy';
+  font-size: 40px;
+  line-height: 100%;
+}
+
+.bold-maj {
+  font-family: 'Dongle';
+  font-size: 32px;
+  line-height: 70%;
+  letter-spacing: -1px;
+  font-weight: 700;
+}
+
+.body-maj {
+  font-family: 'Dongle';
+  font-size: 32px;
+  line-height: 70%;
+  letter-spacing: -1px;
+  font-weight: 300;
+}
+
+.button-maj {
+  font-family: 'Dongle';
+  font-size: 40px;
+  line-height: 70%;
+  letter-spacing: -1px;
+  font-weight: 700;
 }
 
 body {

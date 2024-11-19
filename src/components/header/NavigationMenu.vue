@@ -20,10 +20,12 @@ const isProjectsActive = computed(() => route.path.startsWith('/projects'))
     </button>
 
     <div class="nav-links" :class="{ 'menu-open': isMenuOpen }" @click="toggleMenu">
-      <RouterLink to="/" exact-active-class="active">L'Accueil</RouterLink>
-      <RouterLink to="/method" exact-active-class="active">La Méthode</RouterLink>
-      <RouterLink to="/projects" :class="{ active: isProjectsActive }">Les Projets</RouterLink>
-      <RouterLink to="/contact" exact-active-class="active">Contact</RouterLink>
+      <RouterLink to="/" exact-active-class="active" class="body-maj">L'Accueil</RouterLink>
+      <RouterLink to="/method" exact-active-class="active" class="body-maj">La Méthode</RouterLink>
+      <RouterLink to="/projects" :class="{ active: isProjectsActive }" class="body-maj"
+        >Les Projets</RouterLink
+      >
+      <RouterLink to="/contact" exact-active-class="active" class="body-maj">Contact</RouterLink>
     </div>
   </nav>
 </template>
@@ -37,14 +39,13 @@ const isProjectsActive = computed(() => route.path.startsWith('/projects'))
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: baseline;
+  align-items: center;
   gap: 70px;
   margin-top: 5px;
 }
 
 .nav-links a {
   color: var(--text-color);
-  font-size: var(--normal-font-size);
   text-decoration: none;
   transition: color 0.3s ease;
 }
