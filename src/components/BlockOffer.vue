@@ -1,5 +1,13 @@
 <script setup lang="ts">
-defineProps({
+import handshake from '@/assets/icons/handshake.svg'
+import computer from '@/assets/icons/computer.svg'
+import secure from '@/assets/icons/secure.svg'
+import mvp from '@/assets/icons/mvp.svg'
+import edit from '@/assets/icons/edit.svg'
+import rocket from '@/assets/icons/rocket.svg'
+import { computed } from 'vue'
+
+const props = defineProps({
   image: {
     type: String,
     required: true
@@ -13,11 +21,22 @@ defineProps({
     required: true
   }
 })
+
+const imageMap: Record<string, string> = {
+  handshake,
+  computer,
+  secure,
+  mvp,
+  edit,
+  rocket
+}
+
+const resolvedImage = computed(() => imageMap[props.image] || '')
 </script>
 
 <template>
   <div class="container">
-    <img :src="image" />
+    <img :src="resolvedImage" />
     <p class="bold-maj title">{{ title }}</p>
     <p class="body-maj">{{ body }}</p>
   </div>
