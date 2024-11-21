@@ -5,7 +5,7 @@ import CallButton from '@/components/CallButton.vue'
 <template>
   <div class="container">
     <div class="contact-container">
-      <h1><a href="mailto:contact@remipolicet.com">contact@remipolicet.com</a></h1>
+      <h1><a href="mailto:bonjour@remipolicet.com">bonjour@remipolicet.com</a></h1>
       <h2><a href="tel:+33783214838">+33 7 83 21 48 39</a></h2>
       <h2 class="place">Annecy, FRANCE</h2>
       <div class="media">
