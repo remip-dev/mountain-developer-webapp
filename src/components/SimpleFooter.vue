@@ -1,12 +1,14 @@
 <script setup lang="ts"></script>
 
 <template>
-  <div class="footer-container">
+  <div class="footer-container body-maj">
     <span>Copyright ©Rémi Policet</span>
     <span>|</span>
     <router-link class="link" to="/legal-information">Mentions légales</router-link>
     <span>|</span>
     <span>Annecy</span>
+    <span>|</span>
+    <a class="link" href="https://storyset.com/nature">Nature illustrations by Storyset</a>
   </div>
 </template>
 
@@ -16,15 +18,21 @@ div {
   flex-direction: row;
   justify-content: end;
   margin-top: 30px;
-  color: var(--tertiary-color);
+  color: var(--text-color);
+  flex-wrap: wrap;
 }
 
 .no-body-padding {
   margin-right: 30px;
 }
 
+.no-padding {
+  margin-right: 30px;
+  margin-bottom: 10px;
+}
+
 .link {
-  color: var(--tertiary-color);
+  color: var(--text-color);
   transition: color 0.3s ease;
 }
 
@@ -41,6 +49,11 @@ span,
   .no-body-padding {
     margin-right: 20px;
   }
+
+  .no-padding {
+    margin-right: 20px;
+    margin-bottom: 10px;
+  }
 }
 
 @media (max-width: 600px) {
@@ -49,6 +62,11 @@ span,
   }
   .no-body-padding {
     margin-right: 10px;
+  }
+
+  .no-padding {
+    margin-right: 10px;
+    margin-bottom: 10px;
   }
 }
 

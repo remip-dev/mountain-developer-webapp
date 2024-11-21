@@ -1,5 +1,6 @@
 <script setup lang="ts">
-import { onMounted } from 'vue'
+import OfferSection from '@/components/OfferSection.vue'
+import { onBeforeUnmount, onMounted } from 'vue'
 
 onMounted(() => {
   const mainContainer = document.querySelector('.main-content-container')
@@ -12,7 +13,22 @@ onMounted(() => {
   }
   const footer = document.querySelector('.footer-container')
   if (footer) {
-    footer.classList.add('no-body-padding')
+    footer.classList.add('no-padding')
+  }
+})
+
+onBeforeUnmount(() => {
+  const mainContainer = document.querySelector('.main-content-container')
+  if (mainContainer) {
+    mainContainer.classList.remove('no-top-margin')
+  }
+  const body = document.querySelector('body')
+  if (body) {
+    body.classList.remove('no-padding')
+  }
+  const footer = document.querySelector('.footer-container')
+  if (footer) {
+    footer.classList.remove('no-padding')
   }
 })
 </script>
@@ -53,6 +69,7 @@ onMounted(() => {
       </div>
     </div>
   </div>
+  <OfferSection />
 </template>
 
 <style scoped>
@@ -146,8 +163,7 @@ span {
 }
 
 .customers-box p {
-  margin-top: 0;
-  margin-bottom: 20px;
+  margin: 0 15px 20px;
 }
 
 @keyframes slide {
@@ -251,7 +267,55 @@ span {
   }
 
   .img-intro {
-    max-width: 600px;
+    max-width: 500px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .first-section {
+    height: auto;
+  }
+
+  .intro-container {
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .title-container {
+    margin-top: 30px;
+  }
+
+  .img-intro {
+    max-height: 400px;
+  }
+
+  .logos-slide img {
+    margin: 0 30px;
+  }
+
+  .logos-container:before {
+    width: 120px;
+  }
+
+  .logos-container:after {
+    width: 120px;
+  }
+}
+
+@media (max-width: 600px) {
+  .emoji {
+    position: absolute;
+    bottom: 15px;
+    left: 260px;
+    width: 60px;
+    height: 60px;
+  }
+}
+
+@media (max-width: 500px) {
+  .intro-content {
+    padding: 0 20px;
   }
 }
 </style>

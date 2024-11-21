@@ -35,6 +35,12 @@ export default defineComponent({
 @media (max-width: 600px) {
   .site-name {
     font-size: var(--tablet-h2-font-size);
+    margin-bottom: 5px;
+  }
+
+  .emoji {
+    width: 40px;
+    height: 40px;
   }
 }
 
