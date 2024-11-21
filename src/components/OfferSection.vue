@@ -14,32 +14,32 @@ import CallButton from './CallButton.vue'
     </div>
     <div class="blocks-container">
       <BlockOffer
-        image="src/assets/icons/handshake.svg"
+        image="handshake"
         title="Accompagnement de A à Z"
         body="De la conception à la maintenance, je suis votre seul interlocuteur pour garantir cohérence et simplicité."
       />
       <BlockOffer
-        image="src/assets/icons/computer.svg"
+        image="computer"
         title="Expertise Full Stack"
         body="Backend, frontend, et tout ce qu’il faut entre les deux : je m’occupe de tout."
       />
       <BlockOffer
-        image="src/assets/icons/secure.svg"
+        image="secure"
         title="Code propre et évolutif"
         body="Un code pensé pour durer : robuste, maintenable et conçu pour s’adapter à votre croissance."
       />
       <BlockOffer
-        image="src/assets/icons/mvp.svg"
+        image="mvp"
         title="Un MVP au cœur de votre projet"
         body="Ensemble, nous priorisons l’essentiel pour développer rapidement une version fonctionnelle."
       />
       <BlockOffer
-        image="src/assets/icons/edit.svg"
+        image="edit"
         title="Une Méthode claire en 4 étapes"
         body="Rencontre, Planification, Ascension, Redescente : une méthode précise pour un projet maîtrisé."
       />
       <BlockOffer
-        image="src/assets/icons/rocket.svg"
+        image="rocket"
         title="Le pari de la jeunesse"
         body="La fougue, la débrouillardise et une vision tournée vers l’avenir. Je m’investis pour bâtir un partenariat durable et performant."
       />
