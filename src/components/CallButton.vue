@@ -6,7 +6,7 @@ const isClicked = ref(false)
 
 function handleClick() {
   isClicked.value = !isClicked.value
-  window.location.href = 'https://calendly.com/admin-remipolicet/30min'
+  window.location.href = 'https://calendly.com/le-developpeur-montagnard/meet'
 }
 </script>
 
