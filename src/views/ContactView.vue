@@ -4,8 +4,10 @@ import CallButton from '@/components/CallButton.vue'
 
 <template>
   <div class="container">
-    <div class="contact-container">
-      <h1><a href="mailto:bonjour@remipolicet.com">bonjour@remipolicet.com</a></h1>
+    <div class="contact-container body-maj">
+      <h1>
+        <a href="mailto:bonjour@remipolicet.com">bonjour@remipolicet.com</a>
+      </h1>
       <h2><a href="tel:+33783214838">+33 7 83 21 48 39</a></h2>
       <h2 class="place">Annecy, FRANCE</h2>
       <div class="media">
@@ -47,11 +49,14 @@ a {
 }
 
 h1 {
-  margin: 20px 0;
+  margin: 25px 0;
+  font-size: 85px;
 }
 
 h2 {
   margin: 15px 0;
+  font-weight: 300;
+  font-size: 50px;
   font-weight: 300;
 }
 
@@ -78,6 +83,16 @@ h2 {
 img {
   padding: 10px;
   height: 60px;
+}
+
+@media (max-width: 800px) {
+  h1 {
+    font-size: 45px;
+  }
+
+  h2 {
+    font-size: 34px;
+  }
 }
 
 @media (max-width: 600px) {
